@@ -603,6 +603,69 @@ BG Decoration001
 }
 
 
+/* -----------------
+ANIME CONTENT 
+--------------------*/
+
+#popmsg .message {
+    position: fixed;
+    transition: all 1s ease 0s;
+    bottom: 50px;
+    right: 120px;
+    opacity: 0;
+    background: #ea3c3c;
+    letter-spacing: -1px;
+    color: white;
+    padding: 0.5%;
+    border-radius: 10px;
+}
+
+@keyframes fade1 {
+    0% {
+        display: block;
+        right: 100%;
+    }
+    100% {
+        bottom: 50px;
+        right: 120px;
+    }
+}
+
+@keyframes fade2 {
+    0% {
+        display: block;
+        bottom: 100%;
+    }
+    100% {
+        bottom: 50px;
+    }
+}
+
+@keyframes fade3 {
+    0% {
+        display: block;
+        right: 100%;
+        bottom: 100%;
+    }
+    100% {
+        bottom: 50px;
+        right: 120px;
+    }
+}
+
+#popmsg .fade-in-1 {
+    animation: fade1 1s ease forwards;
+}
+
+#popmsg .fade-in-2 {
+    animation: fade2 1s ease forwards;
+}
+
+#popmsg .fade-in-3 {
+    animation: fade3 1s ease forwards;
+}
+
+
 /* -------------------------------------------------------------------------
      begin Separator
    * ------------------------------------------------------------------------- */
@@ -731,6 +794,49 @@ Responsive.ver2021
     .pagetop a {
         padding: 31px 0;
         transform: scale(0.45);
+    }
+    #popmsg .message {
+        position: fixed;
+        transition: all 1s ease 0s;
+        bottom: 50px;
+        right: 70px;
+        opacity: 0;
+        background: #ea3c3c;
+        letter-spacing: -1px;
+        color: white;
+        font-size: 16px;
+        padding: 1.5%;
+        border-radius: 10px;
+    }
+    @keyframes fade1 {
+        0% {
+            display: block;
+            right: 100%;
+        }
+        100% {
+            bottom: 20px;
+            right: 70px;
+        }
+    }
+    @keyframes fade2 {
+        0% {
+            display: block;
+            bottom: 100%;
+        }
+        100% {
+            bottom: 20px;
+        }
+    }
+    @keyframes fade3 {
+        0% {
+            display: block;
+            right: 100%;
+            bottom: 100%;
+        }
+        100% {
+            bottom: 20px;
+            right: 70px;
+        }
     }
 }
 

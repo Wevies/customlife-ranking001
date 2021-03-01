@@ -10,7 +10,7 @@ hero area
 
 .hero-area>.bg480 {
     content: "";
-    background: beige;
+    background: url("../assets/image/bg/main-image.svg")no-repeat center center/cover;
     height: 480px;
 }
 
@@ -655,6 +655,17 @@ about area
     padding: 10px 0;
 }
 
+footer #footer {
+    text-align: center;
+    padding: 30px 0;
+    color: rgb(104, 104, 104);
+    font-size: 14px;
+}
+
+footer #footer a {
+    color: #35b78a;
+}
+
 
 /*  --------------------------------
 
@@ -938,7 +949,7 @@ Responsive.ver2021
         font-size: 13px;
     }
     .ranking001-area--in>.word::before {
-        top: -544px;
+        top: -530px;
         left: 15px;
         width: 200px;
     }
@@ -959,6 +970,11 @@ Responsive.ver2021
     .section-one .section-one__title,
     .section-two .section-two__title {
         font-size: 26px;
+    }
+    /* Footer */
+    footer #footer a {
+        font-size: 12px;
+        letter-spacing: -1px;
     }
 }
 
@@ -1004,5 +1020,14 @@ Responsive.ver2021
     .ranking001-area--in>table tr:nth-child(4) td:nth-child(2)::after,
     .ranking001-area--in>table tr:nth-child(5) td:nth-child(2)::after {
         right: 27px;
+    }
+    .ranking001-area--in>.word {
+        font-size: 12px;
+    }
+    .ranking001-area--in>.word>dl .time-contena {
+        font-size: 11px;
+    }
+    .ranking001-area--in>.word::before {
+        top: -480px;
     }
 }

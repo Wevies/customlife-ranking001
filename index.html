@@ -126,12 +126,12 @@
         <label id="trigger" for="menu-toggle"></label>
         <label id="burger" for="menu-toggle"></label>
         <ul id="menu">
-            <li><a href="#"><i class="fas fa-award"></i> ランキング　★１位★「サイドヴィーナス」</a></li>
-            <li><a href="#"><i class="fas fa-award"></i> ランキング　★１位★「サイドヴィーナス」</a></li>
+            <li><a href="#"><i class="fas fa-award"></i> ランキング　★１位★</a></li>
+            <li><a href="#"><i class="fas fa-award"></i> ランキング　★１位★</a></li>
             <li>
-                <a href="#"><i class="fas fa-award"></i> ランキング　★１位★「サイドヴィーナス」</a>
+                <a href="#"><i class="fas fa-award"></i> ランキング　★１位★</a>
             </li>
-            <li><a href="#"><i class="fas fa-award"></i> ランキング　★１位★「サイドヴィーナス」</a></li>
+            <li><a href="#"><i class="fas fa-award"></i> ランキング　★１位★</a></li>
         </ul>
     </header>
     <!-- hanbager menu -->
@@ -472,7 +472,56 @@
         </a>
     </p>
 
+    <div id="popmsg">
+        <div class="message" id="popmsg1">
+            <p class="txt">現在 605 人が閲覧しています。</p>
+        </div>
+        <div class="message" id="popmsg2">
+            <p class="txt">現在 435 人が閲覧しています。</p>
+        </div>
+        <div class="message" id="popmsg3">
+            <p class="txt">現在 365 人が閲覧しています。</p>
+        </div>
+    </div>
+    <footer>
+        <div id="footer">
+            ｜ <a href="/?p=42">運営者情報</a> ｜ <a href="/?p=44">プライバシーポリシー</a> ｜ <a href="/?p=433">副業サービス研究所とは</a> ｜ <br><br> ©2021 MARUWAKARI.
+        </div>
+    </footer>
 
+    <script>
+        let docscroll = window.pageYOffset || document.documentElement.scrollTop;
+        let target = document.getElementById("popmsg1");
+        //枠
+        let swcon = 0;
+        let rnd = Math.floor(Math.random() * 3);
+        window.onscroll = function() {
+            docscroll = window.pageYOffset || document.documentElement.scrollTop;
+            console.log(rnd + 1);
+            if (docscroll > 400 && swcon == 0) {
+                swcon = 1;
+                if (rnd == 0) {
+                    target = document.getElementById("popmsg1");
+                    target.classList.add("fade-in-1");
+                    target.style.opacity = 1;
+                } else if (rnd == 1) {
+                    target = document.getElementById("popmsg2");
+                    target.classList.add("fade-in-2");
+                    target.style.opacity = 1;
+                } else if (rnd == 2) {
+                    target = document.getElementById("popmsg3");
+                    target.classList.add("fade-in-3");
+                    target.style.opacity = 1;
+                }
+            } else if (docscroll <= 400) {
+                swcon = 0;
+                target.classList.remove("fade-in-1");
+                target.style.opacity = 0;
+                target.classList.remove("fade-in-2");
+                target.classList.remove("fade-in-3");
+            }
+        };
+    </script>
 </body>
 
 </html>
