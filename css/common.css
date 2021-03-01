@@ -271,12 +271,9 @@ header ul li,
 header ul li a {
     margin: 75px 0 -55px 20px;
     color: #03A9F4;
-    font: 14pt "Roboto", sans-serif;
+    font-size: 16px;
     font-weight: 700;
     line-height: 1.8;
-    text-decoration: none;
-    text-transform: none;
-    list-style: none;
     outline: 0;
     display: none;
 }
@@ -285,7 +282,7 @@ a:focus {
     display: block;
     color: #333;
     background-color: #eee;
-    transition: all .5s;
+    transition: all .8s;
 }
 
 #trigger,
@@ -716,7 +713,7 @@ Responsive.ver2021
     }
     .cta-area001 .cta-area001__contena001 a.btn001 {
         width: 80%;
-        padding: 1% 10px 0 0;
+        padding: 1% 10px 5px 0;
     }
     .page {
         width: 320px;

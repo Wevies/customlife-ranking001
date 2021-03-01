@@ -210,7 +210,7 @@ ranking area
     position: absolute;
     width: 288px;
     right: 40px;
-    top: -980px;
+    top: -2280px;
     bottom: 0;
     display: block;
     margin: auto;
@@ -269,6 +269,49 @@ ranking area
     letter-spacing: 5px;
     font-size: 30px;
     text-shadow: 2px 1px 3px #1e1b38;
+}
+
+.ranking001-area--in>table.data {
+    width: 86%;
+    border-collapse: collapse;
+    margin: 50px auto 40px;
+}
+
+.ranking001-area--in>table.data tr {
+    border-bottom: solid 2px white;
+}
+
+.ranking001-area--in>table.data tr:last-child {
+    border-bottom: none;
+}
+
+.ranking001-area--in>table.data th {
+    font-size: 26px;
+    position: relative;
+    text-align: left;
+    width: 50%;
+    background-color: #828282;
+    color: white;
+    text-align: center;
+    line-height: 2;
+    padding: 10px 0 0px;
+}
+
+.ranking001-area--in>table.data th:after {
+    display: none;
+}
+
+.ranking001-area--in>table.data td {
+    width: 50%;
+    text-align: left;
+    background-color: #f7f7f7;
+    padding: 10px 0 25px 50px;
+    color: #070707;
+    font-weight: bold;
+    letter-spacing: 5px;
+    line-height: 2;
+    font-size: 20px;
+    text-shadow: none;
 }
 
 
@@ -451,6 +494,42 @@ ranking area
     background-size: contain;
     background-position: center;
     background: url(../assets/icons/check.svg) no-repeat center center/contain;
+}
+
+.ranking001-area--in>.word::before {
+    position: absolute;
+    top: -673px;
+    bottom: 0;
+    left: 60px;
+    display: block;
+    margin: auto;
+    content: '';
+    width: 460px;
+    background-size: contain;
+    background-position: center;
+    background: url("../assets/image/bg/word-title.svg") no-repeat center center/contain;
+}
+
+.ranking001-area--in>.word {
+    position: relative;
+    background: rgb(255 245 209);
+    border: 1px #ccc solid;
+    box-shadow: 0 2px 3px 0 #ddd;
+    padding: 5%;
+    border-radius: 20px;
+    margin: 135px 0 30px;
+}
+
+.ranking001-area--in>.word>dl {
+    background: rgb(255, 255, 255);
+    padding: 3% 4%;
+    margin: 15px -10px 20px;
+}
+
+.ranking001-area--in>.word>dl .time-contena {
+    padding-top: 10px;
+    font-size: 14px;
+    text-align: right;
 }
 
 
@@ -741,7 +820,7 @@ Responsive.ver2021
     .ranking001-area--in::before {
         width: 110px;
         right: 5px;
-        top: -835px;
+        top: -1545px;
     }
     .ranking001-area--in>table {
         width: 100%;
@@ -827,6 +906,41 @@ Responsive.ver2021
         background-size: contain;
         background-position: center;
         background: url(../assets/icons/check.svg) no-repeat center center/contain;
+    }
+    .ranking001-area--in>table.data {
+        width: 100%;
+        margin: 30px auto 40px;
+    }
+    .ranking001-area--in>table.data th {
+        font-size: 13px;
+        position: relative;
+        text-align: left;
+        width: 40%;
+        color: white;
+        text-align: center;
+        line-height: 2;
+        padding: 15px 0 0px;
+    }
+    .ranking001-area--in>table.data td {
+        width: 60%;
+        text-align: left;
+        background-color: #f7f7f7;
+        padding: 5px 0 15px 10px;
+        color: #070707;
+        font-weight: bold;
+        letter-spacing: 0px;
+        line-height: 2;
+        font-size: 14px;
+        text-shadow: none;
+    }
+    .ranking001-area--in>.word {
+        margin: 62px -15px 30px;
+        font-size: 13px;
+    }
+    .ranking001-area--in>.word::before {
+        top: -544px;
+        left: 15px;
+        width: 200px;
     }
     /* About-------------area */
     .about-area {
