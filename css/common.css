@@ -103,7 +103,7 @@ html {
     font-style: normal;
     scroll-behavior: smooth;
     /* スクロールをスムーズに */
-    background: #e8fff0;
+    background: #e8f9ff;
 }
 
 body {
@@ -519,7 +519,7 @@ Flow Decoration001
 
 .flow>li:not(:last-child)::after {
     border-width: 20px;
-    border-left-color: #fff8dc;
+    border-left-color: white;
 }
 
 .flow>li .icon {

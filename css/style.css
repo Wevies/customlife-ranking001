@@ -534,23 +534,747 @@ ranking area
 
 
 /* ------------------
+ranking area 
+---------------------*/
+
+
+/* 002 */
+
+.ranking002-area {
+    max-width: 1160px;
+    margin: 90px auto 0;
+    padding-top: 50px;
+    background: white;
+    border: 1px #ccc solid;
+    box-shadow: 0 2px 3px 0 #ddd;
+    border-radius: 15px;
+    position: relative;
+}
+
+.ranking002-area>hr {
+    height: 2px;
+    width: 95%;
+    margin: 0 auto;
+    background: #bdbcb7;
+}
+
+.ranking002-area--in {
+    padding: 5% 7%;
+}
+
+.ranking002-area--in>img {
+    width: 100%;
+}
+
+.ranking002-area--in::before {
+    position: absolute;
+    width: 288px;
+    right: 40px;
+    top: -2280px;
+    bottom: 0;
+    display: block;
+    margin: auto;
+    content: "";
+    background-size: contain;
+    background-position: center;
+    background: url("../assets/icons/speech-bubble001.svg") no-repeat center center/contain;
+    z-index: 10;
+}
+
+.ranking002-area--in>table {
+    width: 86%;
+    border-collapse: collapse;
+    margin: 50px auto 40px;
+}
+
+.ranking002-area--in>table tr {
+    border-bottom: solid 2px white;
+}
+
+.ranking002-area--in>table tr:last-child {
+    border-bottom: none;
+}
+
+.ranking002-area--in>table th {
+    font-size: 26px;
+    position: relative;
+    text-align: left;
+    width: 30%;
+    background-color: #599fe6;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.ranking002-area--in>table th:after {
+    display: block;
+    content: "";
+    width: 0px;
+    height: 0px;
+    position: absolute;
+    top: calc(50% - 10px);
+    right: -10px;
+    border-left: 10px solid #599fe6;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+}
+
+.ranking002-area--in>table td {
+    width: 70%;
+    text-align: left;
+    background-color: #f7f7f7;
+    padding: 10px 0 0 50px;
+    color: #ffe10c;
+    font-weight: bold;
+    letter-spacing: 5px;
+    font-size: 30px;
+    text-shadow: 2px 1px 3px #1e1b38;
+}
+
+.ranking002-area--in>table.data {
+    width: 86%;
+    border-collapse: collapse;
+    margin: 50px auto 40px;
+}
+
+.ranking002-area--in>table.data tr {
+    border-bottom: solid 2px white;
+}
+
+.ranking002-area--in>table.data tr:last-child {
+    border-bottom: none;
+}
+
+.ranking002-area--in>table.data th {
+    font-size: 26px;
+    position: relative;
+    text-align: left;
+    width: 50%;
+    background-color: #828282;
+    color: white;
+    text-align: center;
+    line-height: 2;
+    padding: 10px 0 0px;
+}
+
+.ranking002-area--in>table.data th:after {
+    display: none;
+}
+
+.ranking002-area--in>table.data td {
+    width: 50%;
+    text-align: left;
+    background-color: #f7f7f7;
+    padding: 10px 0 25px 50px;
+    color: #070707;
+    font-weight: bold;
+    letter-spacing: 5px;
+    line-height: 2;
+    font-size: 20px;
+    text-shadow: none;
+}
+
+
+/* ----------------RANK */
+
+.ranking002-area--in>table tr:nth-child(2) td:nth-child(2)::after {
+    position: absolute;
+    text-shadow: none;
+    color: #222222;
+    line-height: 2.5;
+    font-size: 20px;
+    letter-spacing: 1px;
+    content: "(5.0)";
+    right: 200px;
+}
+
+.ranking002-area--in>table tr:nth-child(3) td:nth-child(2)::after {
+    position: absolute;
+    text-shadow: none;
+    color: #222222;
+    line-height: 2.5;
+    font-size: 20px;
+    letter-spacing: 1px;
+    content: "(5.2)";
+    right: 200px;
+}
+
+.ranking002-area--in>table tr:nth-child(4) td:nth-child(2)::after {
+    position: absolute;
+    text-shadow: none;
+    color: #222222;
+    line-height: 2.5;
+    font-size: 20px;
+    letter-spacing: 1px;
+    content: "(4.2)";
+    right: 200px;
+}
+
+.ranking002-area--in>table tr:nth-child(5) td:nth-child(2)::after {
+    position: absolute;
+    text-shadow: none;
+    color: #222222;
+    line-height: 2.5;
+    font-size: 20px;
+    letter-spacing: 1px;
+    content: "(5.6)";
+    right: 200px;
+}
+
+.ranking002-area--in>table td>small {
+    width: 10%;
+    font-size: 20px;
+    text-align: left;
+    letter-spacing: 0;
+    color: #222222;
+    text-shadow: none;
+}
+
+.ranking002-area--in>table td:nth-child(1) {
+    font-weight: bold;
+    width: 70%;
+    text-align: center;
+    background-color: rgb(191 217 255);
+    padding: 10px 0;
+    color: aliceblue;
+}
+
+.ranking002-area--in .sub-contena {
+    width: 100%;
+    border: double 10px rgb(160, 191, 248);
+    border-radius: 13px;
+    padding: 5%;
+    line-height: 1.7;
+}
+
+.ranking002-area--in .sub-contena span {
+    background-image: -webkit-linear-gradient(left, #fff037a8 -17%, rgb(255 227 27) 80%);
+    background-image: -moz-linear-gradient(left, #fff037a8 -17%, rgb(255 227 27) 80%);
+    background-image: -ms-linear-gradient(left, #fff037a8 -17%, rgb(255 227 27) 80%);
+    background-image: -o-linear-gradient(left, #fff037a8 -17%, rgb(255 227 27) 80%);
+    background-image: linear-gradient(left, #fff037a8 -17%, rgb(255 227 27) 80%);
+    background-repeat: repeat-x;
+    background-size: 200% .4em;
+    background-position: 0 .9em;
+}
+
+
+/* --------------Title */
+
+.ranking-title__001 {
+    font-size: 50px;
+    line-height: 1.2;
+    text-align: left;
+    padding-left: 140px;
+    color: #fff;
+    font-weight: bold;
+    text-shadow: 3px 2px #545454;
+    transform: translateY(-21px);
+}
+
+.ranking-title__001>a {
+    color: black;
+    text-shadow: none;
+    text-decoration: underline solid yellow;
+}
+
+.ranking-title__001>a::after {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    display: block;
+    margin: auto;
+    content: '';
+    background-size: contain;
+    background-position: center;
+    background: url("../assets/icons/no1.svg") no-repeat center center/contain;
+}
+
+.ranking-title__001>a::after {
+    left: 15px;
+    width: 100px;
+    height: 80px;
+}
+
+.ranking002-area--in ul li span {
+    background-image: -webkit-linear-gradient(left, #fff037a8 -17%, rgb(255 227 27) 80%);
+    background-image: -moz-linear-gradient(left, #fff037a8 -17%, rgb(255 227 27) 80%);
+    background-image: -ms-linear-gradient(left, #fff037a8 -17%, rgb(255 227 27) 80%);
+    background-image: -o-linear-gradient(left, #fff037a8 -17%, rgb(255 227 27) 80%);
+    background-image: linear-gradient(left, #fff037a8 -17%, rgb(255 227 27) 80%);
+    background-repeat: repeat-x;
+    background-size: 200% .4em;
+    background-position: 0 .9em;
+}
+
+.ranking002-area--in ul {
+    position: relative;
+    left: 300px;
+    margin: 50px auto;
+    font-size: 25px;
+}
+
+.ranking002-area--in ul li:nth-child(1):before {
+    position: absolute;
+    top: -71px;
+    bottom: 0;
+    left: -51px;
+    display: block;
+    margin: auto;
+    content: '';
+    width: 32px;
+    background-size: contain;
+    background-position: center;
+    background: url(../assets/icons/check.svg) no-repeat center center/contain;
+}
+
+.ranking002-area--in ul li:nth-child(2):before {
+    position: absolute;
+    top: 0px;
+    bottom: 0;
+    left: -51px;
+    display: block;
+    margin: auto;
+    content: '';
+    width: 32px;
+    background-size: contain;
+    background-position: center;
+    background: url(../assets/icons/check.svg) no-repeat center center/contain;
+}
+
+.ranking002-area--in ul li:nth-child(3):before {
+    position: absolute;
+    top: 70px;
+    bottom: 0;
+    left: -51px;
+    display: block;
+    margin: auto;
+    content: '';
+    width: 32px;
+    background-size: contain;
+    background-position: center;
+    background: url(../assets/icons/check.svg) no-repeat center center/contain;
+}
+
+.ranking002-area--in>.word::before {
+    position: absolute;
+    top: -673px;
+    bottom: 0;
+    left: 60px;
+    display: block;
+    margin: auto;
+    content: '';
+    width: 460px;
+    background-size: contain;
+    background-position: center;
+    background: url("../assets/image/bg/word-title.svg") no-repeat center center/contain;
+}
+
+.ranking002-area--in>.word {
+    position: relative;
+    background: rgb(255 245 209);
+    border: 1px #ccc solid;
+    box-shadow: 0 2px 3px 0 #ddd;
+    padding: 5%;
+    border-radius: 20px;
+    margin: 135px 0 30px;
+}
+
+.ranking002-area--in>.word>dl {
+    background: rgb(255, 255, 255);
+    padding: 3% 4%;
+    margin: 15px -10px 20px;
+}
+
+.ranking002-area--in>.word>dl .time-contena {
+    padding-top: 10px;
+    font-size: 14px;
+    text-align: right;
+}
+
+
+/* ------------------
+ranking area 
+---------------------*/
+
+
+/* 002 */
+
+.ranking003-area {
+    max-width: 1160px;
+    margin: 90px auto 0;
+    padding-top: 50px;
+    background: white;
+    border: 1px #ccc solid;
+    box-shadow: 0 2px 3px 0 #ddd;
+    border-radius: 15px;
+    position: relative;
+}
+
+.ranking003-area>hr {
+    height: 2px;
+    width: 95%;
+    margin: 0 auto;
+    background: #bdbcb7;
+}
+
+.ranking003-area--in {
+    padding: 5% 7%;
+}
+
+.ranking003-area--in>img {
+    width: 100%;
+}
+
+.ranking003-area--in::before {
+    position: absolute;
+    width: 288px;
+    right: 40px;
+    top: -2280px;
+    bottom: 0;
+    display: block;
+    margin: auto;
+    content: "";
+    background-size: contain;
+    background-position: center;
+    background: url("../assets/icons/speech-bubble001.svg") no-repeat center center/contain;
+    z-index: 10;
+}
+
+.ranking003-area--in>table {
+    width: 86%;
+    border-collapse: collapse;
+    margin: 50px auto 40px;
+}
+
+.ranking003-area--in>table tr {
+    border-bottom: solid 2px white;
+}
+
+.ranking003-area--in>table tr:last-child {
+    border-bottom: none;
+}
+
+.ranking003-area--in>table th {
+    font-size: 26px;
+    position: relative;
+    text-align: left;
+    width: 30%;
+    background-color: #599fe6;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.ranking003-area--in>table th:after {
+    display: block;
+    content: "";
+    width: 0px;
+    height: 0px;
+    position: absolute;
+    top: calc(50% - 10px);
+    right: -10px;
+    border-left: 10px solid #599fe6;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+}
+
+.ranking003-area--in>table td {
+    width: 70%;
+    text-align: left;
+    background-color: #f7f7f7;
+    padding: 10px 0 0 50px;
+    color: #ffe10c;
+    font-weight: bold;
+    letter-spacing: 5px;
+    font-size: 30px;
+    text-shadow: 2px 1px 3px #1e1b38;
+}
+
+.ranking003-area--in>table.data {
+    width: 86%;
+    border-collapse: collapse;
+    margin: 50px auto 40px;
+}
+
+.ranking003-area--in>table.data tr {
+    border-bottom: solid 2px white;
+}
+
+.ranking003-area--in>table.data tr:last-child {
+    border-bottom: none;
+}
+
+.ranking003-area--in>table.data th {
+    font-size: 26px;
+    position: relative;
+    text-align: left;
+    width: 50%;
+    background-color: #828282;
+    color: white;
+    text-align: center;
+    line-height: 2;
+    padding: 10px 0 0px;
+}
+
+.ranking003-area--in>table.data th:after {
+    display: none;
+}
+
+.ranking003-area--in>table.data td {
+    width: 50%;
+    text-align: left;
+    background-color: #f7f7f7;
+    padding: 10px 0 25px 50px;
+    color: #070707;
+    font-weight: bold;
+    letter-spacing: 5px;
+    line-height: 2;
+    font-size: 20px;
+    text-shadow: none;
+}
+
+
+/* ----------------RANK */
+
+.ranking003-area--in>table tr:nth-child(2) td:nth-child(2)::after {
+    position: absolute;
+    text-shadow: none;
+    color: #222222;
+    line-height: 2.5;
+    font-size: 20px;
+    letter-spacing: 1px;
+    content: "(5.0)";
+    right: 200px;
+}
+
+.ranking003-area--in>table tr:nth-child(3) td:nth-child(2)::after {
+    position: absolute;
+    text-shadow: none;
+    color: #222222;
+    line-height: 2.5;
+    font-size: 20px;
+    letter-spacing: 1px;
+    content: "(5.2)";
+    right: 200px;
+}
+
+.ranking003-area--in>table tr:nth-child(4) td:nth-child(2)::after {
+    position: absolute;
+    text-shadow: none;
+    color: #222222;
+    line-height: 2.5;
+    font-size: 20px;
+    letter-spacing: 1px;
+    content: "(4.2)";
+    right: 200px;
+}
+
+.ranking003-area--in>table tr:nth-child(5) td:nth-child(2)::after {
+    position: absolute;
+    text-shadow: none;
+    color: #222222;
+    line-height: 2.5;
+    font-size: 20px;
+    letter-spacing: 1px;
+    content: "(5.6)";
+    right: 200px;
+}
+
+.ranking003-area--in>table td>small {
+    width: 10%;
+    font-size: 20px;
+    text-align: left;
+    letter-spacing: 0;
+    color: #222222;
+    text-shadow: none;
+}
+
+.ranking003-area--in>table td:nth-child(1) {
+    font-weight: bold;
+    width: 70%;
+    text-align: center;
+    background-color: rgb(191 217 255);
+    padding: 10px 0;
+    color: aliceblue;
+}
+
+.ranking003-area--in .sub-contena {
+    width: 100%;
+    border: double 10px rgb(160, 191, 248);
+    border-radius: 13px;
+    padding: 5%;
+    line-height: 1.7;
+}
+
+.ranking003-area--in .sub-contena span {
+    background-image: -webkit-linear-gradient(left, #fff037a8 -17%, rgb(255 227 27) 80%);
+    background-image: -moz-linear-gradient(left, #fff037a8 -17%, rgb(255 227 27) 80%);
+    background-image: -ms-linear-gradient(left, #fff037a8 -17%, rgb(255 227 27) 80%);
+    background-image: -o-linear-gradient(left, #fff037a8 -17%, rgb(255 227 27) 80%);
+    background-image: linear-gradient(left, #fff037a8 -17%, rgb(255 227 27) 80%);
+    background-repeat: repeat-x;
+    background-size: 200% .4em;
+    background-position: 0 .9em;
+}
+
+
+/* --------------Title */
+
+.ranking-title__001 {
+    font-size: 50px;
+    line-height: 1.2;
+    text-align: left;
+    padding-left: 140px;
+    color: #fff;
+    font-weight: bold;
+    text-shadow: 3px 2px #545454;
+    transform: translateY(-21px);
+}
+
+.ranking-title__001>a {
+    color: black;
+    text-shadow: none;
+    text-decoration: underline solid yellow;
+}
+
+.ranking-title__001>a::after {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    display: block;
+    margin: auto;
+    content: '';
+    background-size: contain;
+    background-position: center;
+    background: url("../assets/icons/no1.svg") no-repeat center center/contain;
+}
+
+.ranking-title__001>a::after {
+    left: 15px;
+    width: 100px;
+    height: 80px;
+}
+
+.ranking003-area--in ul li span {
+    background-image: -webkit-linear-gradient(left, #fff037a8 -17%, rgb(255 227 27) 80%);
+    background-image: -moz-linear-gradient(left, #fff037a8 -17%, rgb(255 227 27) 80%);
+    background-image: -ms-linear-gradient(left, #fff037a8 -17%, rgb(255 227 27) 80%);
+    background-image: -o-linear-gradient(left, #fff037a8 -17%, rgb(255 227 27) 80%);
+    background-image: linear-gradient(left, #fff037a8 -17%, rgb(255 227 27) 80%);
+    background-repeat: repeat-x;
+    background-size: 200% .4em;
+    background-position: 0 .9em;
+}
+
+.ranking003-area--in ul {
+    position: relative;
+    left: 300px;
+    margin: 50px auto;
+    font-size: 25px;
+}
+
+.ranking003-area--in ul li:nth-child(1):before {
+    position: absolute;
+    top: -71px;
+    bottom: 0;
+    left: -51px;
+    display: block;
+    margin: auto;
+    content: '';
+    width: 32px;
+    background-size: contain;
+    background-position: center;
+    background: url(../assets/icons/check.svg) no-repeat center center/contain;
+}
+
+.ranking003-area--in ul li:nth-child(2):before {
+    position: absolute;
+    top: 0px;
+    bottom: 0;
+    left: -51px;
+    display: block;
+    margin: auto;
+    content: '';
+    width: 32px;
+    background-size: contain;
+    background-position: center;
+    background: url(../assets/icons/check.svg) no-repeat center center/contain;
+}
+
+.ranking003-area--in ul li:nth-child(3):before {
+    position: absolute;
+    top: 70px;
+    bottom: 0;
+    left: -51px;
+    display: block;
+    margin: auto;
+    content: '';
+    width: 32px;
+    background-size: contain;
+    background-position: center;
+    background: url(../assets/icons/check.svg) no-repeat center center/contain;
+}
+
+.ranking003-area--in>.word::before {
+    position: absolute;
+    top: -673px;
+    bottom: 0;
+    left: 60px;
+    display: block;
+    margin: auto;
+    content: '';
+    width: 460px;
+    background-size: contain;
+    background-position: center;
+    background: url("../assets/image/bg/word-title.svg") no-repeat center center/contain;
+}
+
+.ranking003-area--in>.word {
+    position: relative;
+    background: rgb(255 245 209);
+    border: 1px #ccc solid;
+    box-shadow: 0 2px 3px 0 #ddd;
+    padding: 5%;
+    border-radius: 20px;
+    margin: 135px 0 30px;
+}
+
+.ranking003-area--in>.word>dl {
+    background: rgb(255, 255, 255);
+    padding: 3% 4%;
+    margin: 15px -10px 20px;
+}
+
+.ranking003-area--in>.word>dl .time-contena {
+    padding-top: 10px;
+    font-size: 14px;
+    text-align: right;
+}
+
+
+/* ------------------
 about area 
 ---------------------*/
 
 .about-area {
     max-width: 1160px;
-    margin: 50px auto 0;
+    margin: 90px auto 0;
+    background: white;
+    position: relative;
 }
 
 
 /* --------------Title */
 
 .about-title__001 {
-    font-size: 22px;
+    font-size: 27px;
     text-align: center;
     line-height: 2.8;
-    color: #f52727;
-    font-weight: bold;
+    color: #fff;
+    background: url(../assets/image/bg/dots.png) repeat center center rgb(225 239 205);
+    margin: 0 20px;
+    text-shadow: 1px 2px 3px #462e03;
 }
 
 .about-title__002 {
@@ -562,12 +1286,16 @@ about area
 }
 
 .about-area__contena001 {
-    height: 60px;
-    background: url("../assets/image/bg/dots.png") repeat center center rgb(165 206 148);
+    background: rgb(255 248 220);
+    padding: 5%;
+    border: 1px #ccc solid;
+    box-shadow: 0 2px 3px 0 #ddd;
 }
 
 .about-area__contena001--in {
-    background: cornsilk;
+    background: rgb(255, 255, 255);
+    margin: 5% 2% 0%;
+    padding-top: 30px;
 }
 
 .about-img {
@@ -657,9 +1385,10 @@ about area
 
 footer #footer {
     text-align: center;
-    padding: 30px 0;
+    padding: 60px 0;
     color: rgb(104, 104, 104);
     font-size: 14px;
+    background: white;
 }
 
 footer #footer a {
@@ -686,10 +1415,29 @@ Responsive.ver2021
     .how-area__contena001--in>p {
         font-size: 31px;
     }
+    /* ranking001 */
     .ranking001-area--in .sub-contena {
         font-size: 21px;
     }
     .ranking001-area--in ul {
+        left: 50px;
+        font-size: 25px;
+        width: 500px;
+    }
+    /* ranking002 */
+    .ranking002-area--in .sub-contena {
+        font-size: 21px;
+    }
+    .ranking002-area--in ul {
+        left: 50px;
+        font-size: 25px;
+        width: 500px;
+    }
+    /* ranking003 */
+    .ranking003-area--in .sub-contena {
+        font-size: 21px;
+    }
+    .ranking003-area--in ul {
         left: 50px;
         font-size: 25px;
         width: 500px;
@@ -711,6 +1459,7 @@ Responsive.ver2021
     .hero-title002 span:nth-child(2) {
         font-size: 50px;
     }
+    /* ranking001 */
     .ranking001-area--in>table td {
         padding: 10px 0 0 30px;
         letter-spacing: 5px;
@@ -726,6 +1475,46 @@ Responsive.ver2021
         font-size: 21px;
     }
     .ranking001-area--in ul {
+        left: 50px;
+        font-size: 25px;
+        width: 500px;
+    }
+    /* ranking002 */
+    .ranking002-area--in>table td {
+        padding: 10px 0 0 30px;
+        letter-spacing: 5px;
+        font-size: 24px;
+    }
+    .ranking002-area--in>table tr:nth-child(2) td:nth-child(2)::after,
+    .ranking002-area--in>table tr:nth-child(3) td:nth-child(2)::after,
+    .ranking002-area--in>table tr:nth-child(4) td:nth-child(2)::after,
+    .ranking002-area--in>table tr:nth-child(5) td:nth-child(2)::after {
+        right: 115px;
+    }
+    .ranking002-area--in .sub-contena {
+        font-size: 21px;
+    }
+    .ranking002-area--in ul {
+        left: 50px;
+        font-size: 25px;
+        width: 500px;
+    }
+    /* ranking003 */
+    .ranking003-area--in>table td {
+        padding: 10px 0 0 30px;
+        letter-spacing: 5px;
+        font-size: 24px;
+    }
+    .ranking003-area--in>table tr:nth-child(2) td:nth-child(2)::after,
+    .ranking003-area--in>table tr:nth-child(3) td:nth-child(2)::after,
+    .ranking003-area--in>table tr:nth-child(4) td:nth-child(2)::after,
+    .ranking003-area--in>table tr:nth-child(5) td:nth-child(2)::after {
+        right: 115px;
+    }
+    .ranking003-area--in .sub-contena {
+        font-size: 21px;
+    }
+    .ranking003-area--in ul {
         left: 50px;
         font-size: 25px;
         width: 500px;
@@ -802,7 +1591,8 @@ Responsive.ver2021
     .how-area>.time-contena {
         font-size: 14px;
     }
-    /* Ranking---------------area */
+    /* Ranking---------------area
+    ---------------------------001 */
     .ranking001-area {
         margin: 30px auto 0;
         padding-top: 20px;
@@ -949,6 +1739,310 @@ Responsive.ver2021
         font-size: 13px;
     }
     .ranking001-area--in>.word::before {
+        top: -530px;
+        left: 15px;
+        width: 200px;
+    }
+    /* Ranking---------------area
+    ---------------------------002 */
+    .ranking002-area {
+        margin: 30px auto 0;
+        padding-top: 20px;
+    }
+    .ranking002-area>hr {
+        height: 2px;
+        margin: -20px auto 0;
+    }
+    .ranking-title__001 {
+        text-align: left;
+        padding-left: 78px;
+    }
+    .ranking-title__001>a {
+        font-size: 24px;
+        line-height: 2;
+        color: black;
+        text-shadow: none;
+        text-decoration: underline solid 5px yellow;
+    }
+    .ranking-title__001>a::after {
+        left: 15px;
+        top: 10px;
+        width: 50px;
+        height: 50px;
+    }
+    .ranking002-area--in::before {
+        width: 110px;
+        right: 5px;
+        top: -1545px;
+    }
+    .ranking002-area--in>table {
+        width: 100%;
+    }
+    .ranking002-area--in>table th {
+        font-size: 18px;
+        position: relative;
+        text-align: left;
+        width: 30%;
+        background-color: #599fe6;
+        color: white;
+        text-align: center;
+        padding: 10px 0;
+    }
+    .ranking002-area--in>table td {
+        padding: 10px 0 0 10px;
+        color: #ffe10c;
+        font-weight: bold;
+        letter-spacing: -2px;
+        font-size: 16px;
+        text-shadow: 2px 1px 1px #1e1b38;
+    }
+    .ranking002-area--in>table td:nth-child(1) {
+        letter-spacing: 3px;
+    }
+    .ranking002-area--in>table tr:nth-child(2) td:nth-child(2)::after,
+    .ranking002-area--in>table tr:nth-child(3) td:nth-child(2)::after,
+    .ranking002-area--in>table tr:nth-child(4) td:nth-child(2)::after,
+    .ranking002-area--in>table tr:nth-child(5) td:nth-child(2)::after {
+        position: absolute;
+        text-shadow: none;
+        color: #222222;
+        line-height: 2.3;
+        font-size: 12px;
+        right: 42px;
+    }
+    .ranking002-area--in .sub-contena {
+        font-size: 13px;
+    }
+    .ranking002-area--in ul {
+        position: relative;
+        left: 23px;
+        margin: 36px auto 10px;
+        font-size: 13px;
+        line-height: 2;
+        width: 260px;
+    }
+    .ranking002-area--in ul li:nth-child(1):before {
+        position: absolute;
+        top: -60px;
+        bottom: 0;
+        left: -35px;
+        display: block;
+        margin: auto;
+        content: '';
+        width: 24px;
+        background-size: contain;
+        background-position: center;
+        background: url(../assets/icons/check.svg) no-repeat center center/contain;
+    }
+    .ranking002-area--in ul li:nth-child(2):before {
+        position: absolute;
+        top: -10px;
+        bottom: 0;
+        left: -35px;
+        display: block;
+        margin: auto;
+        content: '';
+        width: 24px;
+        background-size: contain;
+        background-position: center;
+        background: url(../assets/icons/check.svg) no-repeat center center/contain;
+    }
+    .ranking002-area--in ul li:nth-child(3):before {
+        position: absolute;
+        top: 40px;
+        bottom: 0;
+        left: -35px;
+        display: block;
+        margin: auto;
+        content: '';
+        width: 24px;
+        background-size: contain;
+        background-position: center;
+        background: url(../assets/icons/check.svg) no-repeat center center/contain;
+    }
+    .ranking002-area--in>table.data {
+        width: 100%;
+        margin: 30px auto 40px;
+    }
+    .ranking002-area--in>table.data th {
+        font-size: 13px;
+        position: relative;
+        text-align: left;
+        width: 40%;
+        color: white;
+        text-align: center;
+        line-height: 2;
+        padding: 15px 0 0px;
+    }
+    .ranking002-area--in>table.data td {
+        width: 60%;
+        text-align: left;
+        background-color: #f7f7f7;
+        padding: 5px 0 15px 10px;
+        color: #070707;
+        font-weight: bold;
+        letter-spacing: 0px;
+        line-height: 2;
+        font-size: 14px;
+        text-shadow: none;
+    }
+    .ranking002-area--in>.word {
+        margin: 62px -15px 30px;
+        font-size: 13px;
+    }
+    .ranking002-area--in>.word::before {
+        top: -530px;
+        left: 15px;
+        width: 200px;
+    }
+    /* Ranking---------------area
+    ---------------------------003 */
+    .ranking003-area {
+        margin: 30px auto 0;
+        padding-top: 20px;
+    }
+    .ranking003-area>hr {
+        height: 2px;
+        margin: -20px auto 0;
+    }
+    .ranking-title__001 {
+        text-align: left;
+        padding-left: 78px;
+    }
+    .ranking-title__001>a {
+        font-size: 24px;
+        line-height: 2;
+        color: black;
+        text-shadow: none;
+        text-decoration: underline solid 5px yellow;
+    }
+    .ranking-title__001>a::after {
+        left: 15px;
+        top: 10px;
+        width: 50px;
+        height: 50px;
+    }
+    .ranking003-area--in::before {
+        width: 110px;
+        right: 5px;
+        top: -1545px;
+    }
+    .ranking003-area--in>table {
+        width: 100%;
+    }
+    .ranking003-area--in>table th {
+        font-size: 18px;
+        position: relative;
+        text-align: left;
+        width: 30%;
+        background-color: #599fe6;
+        color: white;
+        text-align: center;
+        padding: 10px 0;
+    }
+    .ranking003-area--in>table td {
+        padding: 10px 0 0 10px;
+        color: #ffe10c;
+        font-weight: bold;
+        letter-spacing: -2px;
+        font-size: 16px;
+        text-shadow: 2px 1px 1px #1e1b38;
+    }
+    .ranking003-area--in>table td:nth-child(1) {
+        letter-spacing: 3px;
+    }
+    .ranking003-area--in>table tr:nth-child(2) td:nth-child(2)::after,
+    .ranking003-area--in>table tr:nth-child(3) td:nth-child(2)::after,
+    .ranking003-area--in>table tr:nth-child(4) td:nth-child(2)::after,
+    .ranking003-area--in>table tr:nth-child(5) td:nth-child(2)::after {
+        position: absolute;
+        text-shadow: none;
+        color: #222222;
+        line-height: 2.3;
+        font-size: 12px;
+        right: 42px;
+    }
+    .ranking003-area--in .sub-contena {
+        font-size: 13px;
+    }
+    .ranking003-area--in ul {
+        position: relative;
+        left: 23px;
+        margin: 36px auto 10px;
+        font-size: 13px;
+        line-height: 2;
+        width: 260px;
+    }
+    .ranking003-area--in ul li:nth-child(1):before {
+        position: absolute;
+        top: -60px;
+        bottom: 0;
+        left: -35px;
+        display: block;
+        margin: auto;
+        content: '';
+        width: 24px;
+        background-size: contain;
+        background-position: center;
+        background: url(../assets/icons/check.svg) no-repeat center center/contain;
+    }
+    .ranking003-area--in ul li:nth-child(2):before {
+        position: absolute;
+        top: -10px;
+        bottom: 0;
+        left: -35px;
+        display: block;
+        margin: auto;
+        content: '';
+        width: 24px;
+        background-size: contain;
+        background-position: center;
+        background: url(../assets/icons/check.svg) no-repeat center center/contain;
+    }
+    .ranking003-area--in ul li:nth-child(3):before {
+        position: absolute;
+        top: 40px;
+        bottom: 0;
+        left: -35px;
+        display: block;
+        margin: auto;
+        content: '';
+        width: 24px;
+        background-size: contain;
+        background-position: center;
+        background: url(../assets/icons/check.svg) no-repeat center center/contain;
+    }
+    .ranking003-area--in>table.data {
+        width: 100%;
+        margin: 30px auto 40px;
+    }
+    .ranking003-area--in>table.data th {
+        font-size: 13px;
+        position: relative;
+        text-align: left;
+        width: 40%;
+        color: white;
+        text-align: center;
+        line-height: 2;
+        padding: 15px 0 0px;
+    }
+    .ranking003-area--in>table.data td {
+        width: 60%;
+        text-align: left;
+        background-color: #f7f7f7;
+        padding: 5px 0 15px 10px;
+        color: #070707;
+        font-weight: bold;
+        letter-spacing: 0px;
+        line-height: 2;
+        font-size: 14px;
+        text-shadow: none;
+    }
+    .ranking003-area--in>.word {
+        margin: 62px -15px 30px;
+        font-size: 13px;
+    }
+    .ranking003-area--in>.word::before {
         top: -530px;
         left: 15px;
         width: 200px;
