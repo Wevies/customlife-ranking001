@@ -1,0 +1,143 @@
+.js-scroll {
+}
+.js-scroll-in {
+}
+.js-scroll-blur {
+}
+.js-scroll-blur-in {
+}
+ul:not(.flow) li::before {
+  top: 0 !important;
+}
+.effect {
+  transition: all 1s;
+  transform: translate(0px, 240px);
+}
+.effect-in {
+  transform: translate(0px, 0px);
+}
+.pop {
+  opacity: 0;
+  transform: scale(0);
+}
+.pop::before {
+  opacity: 0;
+  transform: scale(0);
+}
+.pop::after {
+  opacity: 0;
+  transform: scale(0);
+}
+.js-scroll-in .pop::before {
+  transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1.3s;
+  opacity: 1;
+  transform: scale(1);
+}
+.js-scroll-in .pop::after {
+  transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1.3s;
+  opacity: 1;
+  transform: scale(1);
+}
+.pop_1::after {
+  opacity: 0;
+  transform: scale(0);
+  left: 0;
+}
+.js-scroll-in .pop_1::after {
+  transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 0.15s;
+  opacity: 1;
+  transform: scale(1);
+  /* transform: scale(1) translatex(-110%); */
+}
+.js-scroll-in .pop_1 {
+  transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 0.3s;
+  opacity: 1;
+  transform: scale(1);
+}
+.js-scroll-in .pop_2 {
+  transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 0.45s;
+  opacity: 1;
+  transform: scale(1);
+}
+.js-scroll-in .pop_3 {
+  transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 0.6s;
+  opacity: 1;
+  transform: scale(1);
+}
+.js-scroll-in .pop_4 {
+  transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 0.75s;
+  opacity: 1;
+  transform: scale(1);
+}
+.js-scroll-in .pop_5 {
+  transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 0.9s;
+  opacity: 1;
+  transform: scale(1);
+}
+.js-scroll-in .pop_6 {
+  transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1.05s;
+  opacity: 1;
+  transform: scale(1);
+}
+.js-scroll-in .pop_7 {
+  transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1.2s;
+  opacity: 1;
+  transform: scale(1);
+}
+.js-scroll-in .pop_8 {
+  transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1.35s;
+  opacity: 1;
+  transform: scale(1);
+}
+.js-scroll-in .pop_9 {
+  transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1.5s;
+  opacity: 1;
+  transform: scale(1);
+}
+.js-scroll-in .pop_10 {
+  transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1.65s;
+  opacity: 1;
+  transform: scale(1);
+}
+.js-scroll .pop {
+  opacity: 0;
+  transform: scale(0);
+}
+.ranking002-area--in > table tr:nth-child(2) td:nth-child(2),
+.ranking002-area--in > table tr:nth-child(3) td:nth-child(2),
+.ranking002-area--in > table tr:nth-child(4) td:nth-child(2),
+.ranking002-area--in > table tr:nth-child(5) td:nth-child(2) {
+  position: relative;
+}
+.ranking003-area--in > table tr:nth-child(2) td:nth-child(2),
+.ranking003-area--in > table tr:nth-child(3) td:nth-child(2),
+.ranking003-area--in > table tr:nth-child(4) td:nth-child(2),
+.ranking003-area--in > table tr:nth-child(5) td:nth-child(2) {
+  position: relative;
+}
+.ranking002-area--in > table tr:nth-child(2) td:nth-child(2)::after,
+.ranking002-area--in > table tr:nth-child(3) td:nth-child(2)::after,
+.ranking002-area--in > table tr:nth-child(4) td:nth-child(2)::after,
+.ranking002-area--in > table tr:nth-child(5) td:nth-child(2)::after {
+  right: 50px;
+}
+.ranking003-area--in > table tr:nth-child(2) td:nth-child(2)::after,
+.ranking003-area--in > table tr:nth-child(3) td:nth-child(2)::after,
+.ranking003-area--in > table tr:nth-child(4) td:nth-child(2)::after,
+.ranking003-area--in > table tr:nth-child(5) td:nth-child(2)::after {
+  right: 50px;
+}
+@media screen and (max-width: 480px) {
+  .ranking002-area--in > table tr:nth-child(2) td:nth-child(2)::after,
+  .ranking002-area--in > table tr:nth-child(3) td:nth-child(2)::after,
+  .ranking002-area--in > table tr:nth-child(4) td:nth-child(2)::after,
+  .ranking002-area--in > table tr:nth-child(5) td:nth-child(2)::after {
+    right: 20px;
+  }
+  .ranking003-area--in > table tr:nth-child(2) td:nth-child(2)::after,
+  .ranking003-area--in > table tr:nth-child(3) td:nth-child(2)::after,
+  .ranking003-area--in > table tr:nth-child(4) td:nth-child(2)::after,
+  .ranking003-area--in > table tr:nth-child(5) td:nth-child(2)::after {
+    right: 20px;
+  }
+}
