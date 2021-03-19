@@ -31,7 +31,7 @@ $(function () {
             let imgPos = $(this).offset().top;
             let scroll = $(window).scrollTop();
             let windowHeight = $(window).height();
-            if (scroll > imgPos - windowHeight + 10) {
+            if (scroll > imgPos - windowHeight + window.outerHeight / 4) {
                 $(this).addClass("js-scroll-in");
                 $(this).removeClass("js-scroll");
             }
@@ -59,16 +59,12 @@ $(function () {
         });
     });
 });
-// $(function () {
-//     $(".js-scroll").each(function () {
-//         let imgPos = $(this).offset().top;
-//         let scroll = $(window).scrollTop();
-//         let windowHeight = $(window).height();
-//         if (scroll > imgPos - windowHeight + 50) {
-//             $(this).addClass("js-scroll-in");
-//         }
-//     });
-// });
+$(function () {
+    $(".pop_").each(function () {
+        $(this).removeClass("pop_");
+        $(this).addClass("pop_" + Math.ceil(Math.random() * 40));
+    });
+});
 // $(function () {
 //     $(".js-scroll-blur").each(function () {
 //         let imgPos = $(this).offset().top;

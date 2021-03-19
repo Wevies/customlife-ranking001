@@ -75,19 +75,18 @@ mark,
 audio,
 video,
 *,
- :after,
- :before {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    outline: 0;
-    font-size: 100%;
-    vertical-align: baseline;
-    background: transparent;
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
+:after,
+:before {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
 }
-
 
 /*  --------------------------------
 
@@ -96,152 +95,148 @@ video,
 ---------------------------------- */
 
 html {
-    font-size: 1.05vw;
-    /* 可変対応14px */
-    font-family: source-han-sans-japanese, sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    scroll-behavior: smooth;
-    /* スクロールをスムーズに */
-    background: #e8f9ff;
+  font-size: 1.05vw;
+  /* 可変対応14px */
+  font-family: source-han-sans-japanese, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  scroll-behavior: smooth;
+  /* スクロールをスムーズに */
+  background: #e8f9ff;
 }
 
 body {
-    overflow-x: hidden;
-    /* サイドバー非表示 */
-    -ms-overflow-style: none;
-    /* IE, Edge 対応 */
-    scrollbar-width: none;
-    /* Firefox 対応 */
+  overflow-x: hidden;
+  /* サイドバー非表示 */
+  -ms-overflow-style: none;
+  /* IE, Edge 対応 */
+  scrollbar-width: none;
+  /* Firefox 対応 */
 }
 
 body::-webkit-scrollbar {
-    /* Chrome, Safari 対応 */
-    display: none;
+  /* Chrome, Safari 対応 */
+  display: none;
 }
 
 main {
-    min-width: 1160px;
+  min-width: 1160px;
 }
-
 
 /* __________テーブル__________ */
 
 table {
-    border-collapse: collapse;
-    /* ボーダー線は重ねる */
-    table-layout: fixed;
-    /* 列幅を固定レイアウトにする */
+  border-collapse: collapse;
+  /* ボーダー線は重ねる */
+  table-layout: fixed;
+  /* 列幅を固定レイアウトにする */
 }
-
 
 /* ___________リンク__________ */
 
 a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 li {
-    list-style: none;
+  list-style: none;
 }
-
 
 /* -------------
 HERO ANIME 
 ----------------*/
 
 .page {
-    margin: 0 auto;
-    padding-top: 1em;
-    width: 800px;
+  margin: 0 auto;
+  padding-top: 1em;
+  width: 800px;
 }
 
 #home-news {
-    font-size: 40px;
-    text-align: center;
-    text-transform: uppercase;
-    color: #464646;
-    height: 45px;
-    line-height: 45px;
-    overflow: hidden;
-    position: relative;
+  font-size: 40px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #464646;
+  height: 45px;
+  line-height: 45px;
+  overflow: hidden;
+  position: relative;
 }
 
 .home_header {
-    position: absolute;
-    width: 100%;
-    z-index: 99;
-    color: #000;
-    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);
+  position: absolute;
+  width: 100%;
+  z-index: 99;
+  color: #000;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);
 }
 
 .home_header_on {
-    z-index: 2;
+  z-index: 2;
 }
 
 .home_header strong {
-    color: #f9a932;
+  color: #f9a932;
 }
 
 .home_header span {
-    background-image: -webkit-linear-gradient(left, #fff037a8 -17%, rgb(255 227 27) 80%);
-    background-image: -moz-linear-gradient(left, #fff037a8 -17%, rgb(255 227 27) 80%);
-    background-image: -ms-linear-gradient(left, #fff037a8 -17%, rgb(255 227 27) 80%);
-    background-image: -o-linear-gradient(left, #fff037a8 -17%, rgb(255 227 27) 80%);
-    background-image: linear-gradient(left, #fff037a8 -17%, rgb(255 227 27) 80%);
-    background-repeat: repeat-x;
-    background-size: 200% .4em;
-    background-position: 0 .9em;
+  background-image: -webkit-linear-gradient(left, #fff037a8 -17%, rgb(255 227 27) 80%);
+  background-image: -moz-linear-gradient(left, #fff037a8 -17%, rgb(255 227 27) 80%);
+  background-image: -ms-linear-gradient(left, #fff037a8 -17%, rgb(255 227 27) 80%);
+  background-image: -o-linear-gradient(left, #fff037a8 -17%, rgb(255 227 27) 80%);
+  background-image: linear-gradient(left, #fff037a8 -17%, rgb(255 227 27) 80%);
+  background-repeat: repeat-x;
+  background-size: 200% 0.4em;
+  background-position: 0 0.9em;
 }
 
 .home_header span,
 .home_header strong {
-    position: relative;
-    top: -50px;
+  position: relative;
+  top: -50px;
 }
 
 .home_header_on *:nth-child(1) {
-    top: 0;
-    -webkit-transition: top .75s ease-in-out;
-    -moz-transition: top .75s ease-in-out;
-    transition: top .75s ease-in-out;
+  top: 0;
+  -webkit-transition: top 0.75s ease-in-out;
+  -moz-transition: top 0.75s ease-in-out;
+  transition: top 0.75s ease-in-out;
 }
 
 .home_header_on *:nth-child(2) {
-    top: 0;
-    -webkit-transition: top .75s ease-in-out .15s;
-    -moz-transition: top .75s ease-in-out .15s;
-    transition: top .75s ease-in-out .15s;
+  top: 0;
+  -webkit-transition: top 0.75s ease-in-out 0.15s;
+  -moz-transition: top 0.75s ease-in-out 0.15s;
+  transition: top 0.75s ease-in-out 0.15s;
 }
 
 .home_header_on *:nth-child(3) {
-    top: 0;
-    -webkit-transition: top .75s ease-in-out .3s;
-    -moz-transition: top .75s ease-in-out .3s;
-    transition: top .75s ease-in-out .3s;
+  top: 0;
+  -webkit-transition: top 0.75s ease-in-out 0.3s;
+  -moz-transition: top 0.75s ease-in-out 0.3s;
+  transition: top 0.75s ease-in-out 0.3s;
 }
 
 .home_header_out *:nth-child(1) {
-    top: 50px;
-    -webkit-transition: top .75s ease-in-out;
-    -webkit-transition: top .75s ease-in-out;
-    -moz-transition: top .75s ease-in-out;
+  top: 50px;
+  -webkit-transition: top 0.75s ease-in-out;
+  -webkit-transition: top 0.75s ease-in-out;
+  -moz-transition: top 0.75s ease-in-out;
 }
 
 .home_header_out *:nth-child(2) {
-    top: 50px;
-    -webkit-transition: top .75s ease-in-out .15s;
-    -moz-transition: top .75s ease-in-out .15s;
-    transition: top .75s ease-in-out .15s;
+  top: 50px;
+  -webkit-transition: top 0.75s ease-in-out 0.15s;
+  -moz-transition: top 0.75s ease-in-out 0.15s;
+  transition: top 0.75s ease-in-out 0.15s;
 }
 
 .home_header_out *:nth-child(3) {
-    top: 50px;
-    -webkit-transition: top .75s ease-in-out .3s;
-    -moz-transition: top .75s ease-in-out .3s;
-    transition: top .75s ease-in-out .3s;
+  top: 50px;
+  -webkit-transition: top 0.75s ease-in-out 0.3s;
+  -moz-transition: top 0.75s ease-in-out 0.3s;
+  transition: top 0.75s ease-in-out 0.3s;
 }
-
 
 /* --------------
 Hanbergar menu 
@@ -249,463 +244,442 @@ Hanbergar menu
 
 @import url(https://fonts.googleapis.com/css?family=Roboto:400,700);
 @keyframes checked-anim {
-    50% {
-        width: 3000px;
-        height: 3000px;
-    }
-    100% {
-        width: 100%;
-        height: 100%;
-        border-radius: 0;
-    }
+  50% {
+    width: 3000px;
+    height: 3000px;
+  }
+  100% {
+    width: 100%;
+    height: 100%;
+    border-radius: 0;
+  }
 }
 
 @keyframes not-checked-anim {
-    0% {
-        width: 3000px;
-        height: 3000px;
-    }
-}
-
-header ul li,
-header ul li a {
-    margin: 75px 0 -55px 20px;
-    color: #03A9F4;
-    font-size: 16px;
-    font-weight: 700;
-    line-height: 1.8;
-    outline: 0;
-    display: none;
+  0% {
+    width: 3000px;
+    height: 3000px;
+  }
 }
 
 a:focus {
-    display: block;
-    color: #333;
-    background-color: #eee;
-    transition: all .8s;
+  display: block;
+  color: #333;
+  background-color: #eee;
+  transition: all 0.8s;
 }
 
 #trigger,
 #burger,
 #burger:before,
 #burger:after {
-    position: fixed;
-    top: 30px;
-    left: 20px;
-    background: #03A9F4;
-    width: 30px;
-    height: 5px;
-    transition: .2s ease;
-    cursor: pointer;
-    z-index: 100;
+  position: fixed;
+  top: 30px;
+  left: 20px;
+  background: #03a9f4;
+  width: 30px;
+  height: 5px;
+  transition: 0.2s ease;
+  cursor: pointer;
+  z-index: 100;
 }
 
 #trigger {
-    height: 25px;
-    background: none;
+  height: 25px;
+  background: none;
 }
 
 #burger:before {
-    content: " ";
-    top: 20px;
-    left: 20px;
+  content: " ";
+  top: 20px;
+  left: 20px;
 }
 
 #burger:after {
-    content: " ";
-    top: 40px;
-    left: 20px;
+  content: " ";
+  top: 40px;
+  left: 20px;
 }
 
-#menu-toggle:checked+#trigger+#burger {
-    top: 30px;
-    transform: rotate(180deg);
-    transition: transform .2s ease;
+#menu-toggle:checked + #trigger + #burger {
+  top: 30px;
+  transform: rotate(180deg);
+  transition: transform 0.2s ease;
 }
 
-#menu-toggle:checked+#trigger+#burger:before {
-    width: 20px;
-    top: -2px;
-    left: 20px;
-    transform: rotate(45deg) translateX(-5px);
-    transition: transform .2s ease;
+#menu-toggle:checked + #trigger + #burger:before {
+  width: 20px;
+  top: -2px;
+  left: 20px;
+  transform: rotate(45deg) translateX(-5px);
+  transition: transform 0.2s ease;
 }
 
-#menu-toggle:checked+#trigger+#burger:after {
-    width: 20px;
-    top: 2px;
-    left: 20px;
-    transform: rotate(-45deg) translateX(-5px);
-    transition: transform .2s ease;
+#menu-toggle:checked + #trigger + #burger:after {
+  width: 20px;
+  top: 2px;
+  left: 20px;
+  transform: rotate(-45deg) translateX(-5px);
+  transition: transform 0.2s ease;
 }
 
 #menu {
-    position: fixed;
-    margin: 0;
-    padding: 0;
-    width: 110px;
-    height: 96px;
-    background-color: #fff;
-    border-bottom-right-radius: 100%;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.26);
-    animation: not-checked-anim .2s both;
-    transition: .6s;
-    z-index: 99;
+  position: fixed;
+  margin: 0;
+  padding: 0;
+  width: 110px;
+  height: 96px;
+  background-color: #fff;
+  border-bottom-right-radius: 100%;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.26);
+  animation: not-checked-anim 0.2s both;
+  transition: 0.6s;
+  z-index: 99;
 }
 
-#menu-toggle:checked+#trigger+#burger+#menu {
-    animation: checked-anim 1.2s ease both;
+#menu-toggle:checked + #trigger + #burger + #menu {
+  animation: checked-anim 1.2s ease both;
 }
 
-#menu-toggle:checked+#trigger~#menu>li,
+#menu-toggle:checked + #trigger ~ #menu > li,
 header ul li a {
-    display: block;
+  display: block;
 }
 
 [type="checkbox"]:not(:checked),
 [type="checkbox"]:checked {
-    display: none;
+  display: none;
 }
-
 
 /* -------ANIME-------
 TOP BACK 
 ----------------*/
 
 .pagetop {
-    display: none;
-    position: fixed;
-    bottom: 30px;
-    right: 15px;
+  display: none;
+  position: fixed;
+  bottom: 30px;
+  right: 15px;
 }
 
 .pagetop img {
-    width: 50%;
+  width: 50%;
 }
 
 .pagetop a {
-    display: block;
-    background-image: linear-gradient(to top, #0ba360 0%, #3cba92 100%);
-    text-align: center;
-    color: #222;
-    font-size: 18px;
-    text-decoration: none;
-    padding: 20px 0px;
-    filter: alpha(opacity=50);
-    -moz-opacity: 1;
-    opacity: 1;
-    border-radius: 100%;
-    box-shadow: 1px 2px 3px 2px #697b6f;
-    transform: scale(0.68);
+  display: block;
+  background-image: linear-gradient(to top, #0ba360 0%, #3cba92 100%);
+  text-align: center;
+  color: #222;
+  font-size: 18px;
+  text-decoration: none;
+  padding: 20px 0px;
+  filter: alpha(opacity=50);
+  -moz-opacity: 1;
+  opacity: 1;
+  border-radius: 100%;
+  box-shadow: 1px 2px 3px 2px #697b6f;
+  transform: scale(0.68);
 }
 
 .pagetop a:hover {
-    background-image: linear-gradient(to top, #087c4a 0%, #36a381 100%);
-    display: block;
-    text-align: center;
-    color: #fff;
-    font-size: 12px;
-    text-decoration: none;
-    padding: 20px 0px;
-    filter: alpha(opacity=50);
-    opacity: 1;
-    transition: 0.6s;
+  background-image: linear-gradient(to top, #087c4a 0%, #36a381 100%);
+  display: block;
+  text-align: center;
+  color: #fff;
+  font-size: 12px;
+  text-decoration: none;
+  padding: 20px 0px;
+  filter: alpha(opacity=50);
+  opacity: 1;
+  transition: 0.6s;
 }
-
 
 /* -------ANIME-------
 HIKARI
 ----------------*/
 
 .cta-area001 {
-    padding: 10px;
-    overflow: hidden;
-    margin: 10px 0;
+  padding: 10px;
+  overflow: hidden;
+  margin: 10px 0;
 }
 
 .cta-area001 .cta-area001__contena001 {
-    padding: 10px;
-    overflow: hidden;
-    margin: 10px 0;
+  padding: 10px;
+  overflow: hidden;
+  margin: 10px 0;
 }
 
 .cta-area001 .cta-area001__contena001 a.btn001 {
-    /* background: linear-gradient(#f70d0f , #b70b00); */
-    background: linear-gradient(#1bcc60, #63bf31);
-    /* border: 1px solid #bd2328; */
-    border-radius: 7px;
-    overflow: hidden;
-    display: block;
-    color: white;
-    text-decoration: none;
-    padding: 1%;
-    width: 40%;
-    line-height: 2;
-    margin: 0 auto;
-    text-align: center;
-    font-size: 20px;
-    font-weight: bold;
-    box-shadow: 1px 1px 2px rgb(0 0 0 / 10%), 1px -1px 2px rgb(0 0 0 / 10%), -1px 1px 2px rgb(0 0 0 / 10%), -1px -1px 2px rgb(0 0 0 / 10%);
+  /* background: linear-gradient(#f70d0f , #b70b00); */
+  background: linear-gradient(#1bcc60, #63bf31);
+  /* border: 1px solid #bd2328; */
+  border-radius: 7px;
+  overflow: hidden;
+  display: block;
+  color: white;
+  text-decoration: none;
+  padding: 1%;
+  width: 40%;
+  line-height: 2;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 20px;
+  font-weight: bold;
+  box-shadow: 1px 1px 2px rgb(0 0 0 / 10%), 1px -1px 2px rgb(0 0 0 / 10%), -1px 1px 2px rgb(0 0 0 / 10%), -1px -1px 2px rgb(0 0 0 / 10%);
 }
 
 .cta-area001 .cta-area001__contena001 a.btn001:before {
-    background-color: rgba(255, 255, 255, 0.9);
-    content: "";
-    height: 70px;
-    position: relative;
-    float: left;
-    margin-top: -30px;
-    transform: skewX( -45deg);
-    animation-duration: 1.5s;
-    animation-name: changex;
-    animation-iteration-count: infinite;
-    width: 1em;
+  background-color: rgba(255, 255, 255, 0.9);
+  content: "";
+  height: 70px;
+  position: relative;
+  float: left;
+  margin-top: -30px;
+  transform: skewX(-45deg);
+  animation-duration: 1.5s;
+  animation-name: changex;
+  animation-iteration-count: infinite;
+  width: 1em;
 }
 
 @keyframes changex {
-    from {
-        left: -180%;
-    }
-    to {
-        left: 150%;
-        opacity: 0.8;
-        display: none
-    }
+  from {
+    left: -180%;
+  }
+  to {
+    left: 150%;
+    opacity: 0.8;
+    display: none;
+  }
 }
-
 
 /* ----------------
 Flow Decoration001 
 --------------------*/
 
 .flow {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
-    width: 80%;
-    margin: 30px auto 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  width: 80%;
+  margin: 30px auto 0;
 }
 
-.flow>li {
-    padding: 20px 30px;
-    margin-bottom: 8vh;
-    -ms-flex-preferred-size: 48%;
-    flex-basis: 48%;
-    border: 2px solid rgb(49 181 135);
-    position: relative;
+.flow > li {
+  padding: 20px 30px;
+  margin-bottom: 8vh;
+  -ms-flex-preferred-size: 48%;
+  flex-basis: 48%;
+  border: 2px solid rgb(49 181 135);
+  position: relative;
 }
 
-.flow>li:nth-child(odd) {
-    margin-right: auto;
+.flow > li:nth-child(odd) {
+  margin-right: auto;
 }
 
-.flow>li:not(:last-child)::before,
-.flow>li:not(:last-child)::after {
-    content: "";
-    border: solid transparent;
-    position: absolute;
-    top: 50%;
-    left: 100%;
-    -webkit-transform: translateY(-50%);
-    transform: translateY(-50%);
+.flow > li:not(:last-child)::before,
+.flow > li:not(:last-child)::after {
+  content: "";
+  border: solid transparent;
+  position: absolute;
+  top: 50%;
+  left: 100%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
 }
 
-.flow>li:not(:last-child)::before {
-    border-width: 22px;
-    border-left-color: rgb(49 181 135);
+.flow > li:not(:last-child)::before {
+  border-width: 22px;
+  border-left-color: rgb(49 181 135);
 }
 
-.flow>li:not(:last-child)::after {
-    border-width: 20px;
-    border-left-color: white;
+.flow > li:not(:last-child)::after {
+  border-width: 20px;
+  border-left-color: white;
 }
 
-.flow>li .icon {
-    font-size: 14px;
-    color: #fff;
-    background: rgb(107, 144, 219);
-    background: -moz-linear-gradient(left, #36a381 0%, #6eec6c 100%);
-    background: -webkit-linear-gradient(left, #36a381 0%, #6eec6c 100%);
-    background: linear-gradient(to right, #36a381 0%, #6eec6c 100%);
-    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#6b90db', endColorstr='#66d5e9', GradientType=1);
-    padding: 10px 20px;
-    display: block;
-    border-radius: 20px;
-    position: absolute;
-    top: -23px;
-    left: -35px;
-    z-index: 100;
+.flow > li .icon {
+  font-size: 14px;
+  color: #fff;
+  background: rgb(107, 144, 219);
+  background: -moz-linear-gradient(left, #36a381 0%, #6eec6c 100%);
+  background: -webkit-linear-gradient(left, #36a381 0%, #6eec6c 100%);
+  background: linear-gradient(to right, #36a381 0%, #6eec6c 100%);
+  filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#6b90db', endColorstr='#66d5e9', GradientType=1);
+  padding: 10px 20px;
+  display: block;
+  border-radius: 20px;
+  position: absolute;
+  top: -23px;
+  left: -35px;
+  z-index: 100;
 }
 
-.flow>li dl dt {
-    font-size: 20px;
-    font-weight: 600;
-    color: rgb(18 160 121);
+.flow > li dl dt {
+  font-size: 20px;
+  font-weight: 600;
+  color: rgb(18 160 121);
 }
-
 
 /* ------------------
 BG Decoration001 
 --------------------*/
 
 .section-one {
-    background-color: #5FC18B;
-    position: relative;
-    padding: 100px 0 120px;
+  background-color: #5fc18b;
+  position: relative;
+  padding: 100px 0 120px;
 }
 
 .section-one .section-one__title {
-    color: #fff;
-    font-size: 35px;
-    margin-bottom: 30px;
-    text-align: center;
+  color: #fff;
+  font-size: 35px;
+  margin-bottom: 30px;
+  text-align: center;
 }
 
 .section-one .section-one__descr {
-    color: #fff;
-    font-size: 16px;
-    line-height: 1.5;
-    max-width: 300px;
-    margin: 0 auto;
-    text-align: center;
+  color: #fff;
+  font-size: 16px;
+  line-height: 1.5;
+  max-width: 300px;
+  margin: 0 auto;
+  text-align: center;
 }
 
 .section-two {
-    background-color: #44a36f;
-    padding: 100px 0 100px;
-    position: relative;
-    margin-top: -2px;
-    z-index: 10;
+  background-color: #44a36f;
+  padding: 100px 0 100px;
+  position: relative;
+  margin-top: -2px;
+  z-index: 10;
 }
 
 .section-two .section-two__title {
-    color: #fff;
-    font-size: 35px;
-    margin-bottom: 30px;
-    text-align: center;
+  color: #fff;
+  font-size: 35px;
+  margin-bottom: 30px;
+  text-align: center;
 }
 
 .section-two .section-two__descr {
-    color: #fff;
-    font-size: 16px;
-    line-height: 1.5;
-    max-width: 300px;
-    margin: 0 auto;
-    text-align: center;
+  color: #fff;
+  font-size: 16px;
+  line-height: 1.5;
+  max-width: 300px;
+  margin: 0 auto;
+  text-align: center;
 }
 
 .section-one img,
 .section-two img {
-    width: 50%;
-    text-align: center;
+  width: 50%;
+  text-align: center;
 }
-
 
 /* -----------------
 ANIME CONTENT 
 --------------------*/
 
 #popmsg .message {
-    position: fixed;
-    transition: all 1s ease 0s;
-    bottom: 50px;
-    right: 120px;
-    opacity: 0;
-    background: #ea3c3c;
-    letter-spacing: -1px;
-    color: white;
-    padding: 0.5%;
-    border-radius: 10px;
+  position: fixed;
+  transition: all 1s ease 0s;
+  bottom: 50px;
+  right: 120px;
+  opacity: 0;
+  background: #ea3c3c;
+  letter-spacing: -1px;
+  color: white;
+  padding: 0.5%;
+  border-radius: 10px;
 }
 
 @keyframes fade1 {
-    0% {
-        display: block;
-        right: 100%;
-    }
-    100% {
-        bottom: 50px;
-        right: 120px;
-    }
+  0% {
+    display: block;
+    right: 100%;
+  }
+  100% {
+    bottom: 50px;
+    right: 120px;
+  }
 }
 
 @keyframes fade2 {
-    0% {
-        display: block;
-        bottom: 100%;
-    }
-    100% {
-        bottom: 50px;
-    }
+  0% {
+    display: block;
+    bottom: 100%;
+  }
+  100% {
+    bottom: 50px;
+  }
 }
 
 @keyframes fade3 {
-    0% {
-        display: block;
-        right: 100%;
-        bottom: 100%;
-    }
-    100% {
-        bottom: 50px;
-        right: 120px;
-    }
+  0% {
+    display: block;
+    right: 100%;
+    bottom: 100%;
+  }
+  100% {
+    bottom: 50px;
+    right: 120px;
+  }
 }
 
 #popmsg .fade-in-1 {
-    animation: fade1 1s ease forwards;
+  animation: fade1 1s ease forwards;
 }
 
 #popmsg .fade-in-2 {
-    animation: fade2 1s ease forwards;
+  animation: fade2 1s ease forwards;
 }
 
 #popmsg .fade-in-3 {
-    animation: fade3 1s ease forwards;
+  animation: fade3 1s ease forwards;
 }
-
 
 /* -------------------------------------------------------------------------
      begin Separator
    * ------------------------------------------------------------------------- */
 
 .separator {
-    bottom: -4px;
-    left: 0;
-    overflow: hidden;
-    position: absolute;
-    width: 100%;
+  bottom: -4px;
+  left: 0;
+  overflow: hidden;
+  position: absolute;
+  width: 100%;
 }
-
 
 /* -------------------------------------------------------------------------
      end Separator
    * ------------------------------------------------------------------------- */
 
-
 /* begin Media Max-Width 767
   ============================================================================ */
 
 @media screen and (max-width: 767px) {
-    .section-one {
-        padding: 130px 0 190px;
-    }
-    .separator {
-        bottom: -110px;
-    }
-    .separator .separator__svg {
-        left: -20%;
-        position: relative;
-        transform: rotate(15deg);
-        width: 140%;
-    }
+  .section-one {
+    padding: 130px 0 190px;
+  }
+  .separator {
+    bottom: -110px;
+  }
+  .separator .separator__svg {
+    left: -20%;
+    position: relative;
+    transform: rotate(15deg);
+    width: 140%;
+  }
 }
-
 
 /* end Media Max-Width 767
   ============================================================================ */
-
 
 /*  --------------------------------
 
@@ -713,149 +687,148 @@ Responsive.ver2021
 
 ---------------------------------- */
 
-
 /* ipad pro */
 
-@media screen and (min-width:1023px) and (max-width:1223px) {}
-
+@media screen and (min-width: 1023px) and (max-width: 1223px) {
+}
 
 /* ipad */
 
-@media screen and (min-width:768px) and (max-width:1023px) {}
-
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+}
 
 /* スマホ */
 
-@media screen and (max-width:480px) {
-    main {
-        min-width: 320px;
+@media screen and (max-width: 480px) {
+  main {
+    min-width: 320px;
+  }
+  #menu {
+    width: 61px;
+    height: 61px;
+  }
+  #burger,
+  #burger:before,
+  #burger:after {
+    top: 25px;
+    left: 10px;
+    width: 27px;
+    height: 3px;
+  }
+  #trigger {
+    left: 20px;
+    top: 5px;
+  }
+  #burger:before {
+    content: " ";
+    top: 15px;
+    left: 10px;
+  }
+  #burger:after {
+    content: " ";
+    top: 35px;
+    left: 10px;
+  }
+  #menu-toggle:checked + #trigger + #burger {
+    top: 25px;
+    left: 15px;
+  }
+  .flow > li {
+    padding: 15px;
+    margin-bottom: 6vh;
+    flex-basis: 45%;
+  }
+  .flow > li dl dt {
+    font-size: 13px;
+  }
+  .flow > li .icon {
+    font-size: 10px;
+    padding: 5px 15px;
+    top: -17px;
+    left: -35px;
+  }
+  .cta-area001 .cta-area001__contena001 a.btn001 {
+    width: 80%;
+    padding: 1% 10px 5px 0;
+  }
+  .page {
+    width: 320px;
+  }
+  #home-news {
+    font-size: 20px;
+  }
+  .pagetop {
+    bottom: -10px;
+    right: -10px;
+  }
+  .pagetop img {
+    width: 30%;
+  }
+  .pagetop a {
+    padding: 31px 0;
+    transform: scale(0.45);
+  }
+  #popmsg .message {
+    position: fixed;
+    transition: all 1s ease 0s;
+    bottom: 50px;
+    right: 70px;
+    opacity: 0;
+    background: #ea3c3c;
+    letter-spacing: -1px;
+    color: white;
+    font-size: 16px;
+    padding: 1.5%;
+    border-radius: 10px;
+  }
+  @keyframes fade1 {
+    0% {
+      display: block;
+      right: 100%;
     }
-    #menu {
-        width: 61px;
-        height: 61px;
+    100% {
+      bottom: 20px;
+      right: 70px;
     }
-    #burger,
-    #burger:before,
-    #burger:after {
-        top: 25px;
-        left: 10px;
-        width: 27px;
-        height: 3px;
+  }
+  @keyframes fade2 {
+    0% {
+      display: block;
+      bottom: 100%;
     }
-    #trigger {
-        left: 20px;
-        top: 5px;
+    100% {
+      bottom: 20px;
     }
-    #burger:before {
-        content: " ";
-        top: 15px;
-        left: 10px;
+  }
+  @keyframes fade3 {
+    0% {
+      display: block;
+      right: 100%;
+      bottom: 100%;
     }
-    #burger:after {
-        content: " ";
-        top: 35px;
-        left: 10px;
+    100% {
+      bottom: 20px;
+      right: 70px;
     }
-    #menu-toggle:checked+#trigger+#burger {
-        top: 25px;
-        left: 15px;
-    }
-    .flow>li {
-        padding: 15px;
-        margin-bottom: 6vh;
-        flex-basis: 45%;
-    }
-    .flow>li dl dt {
-        font-size: 13px;
-    }
-    .flow>li .icon {
-        font-size: 10px;
-        padding: 5px 15px;
-        top: -17px;
-        left: -35px;
-    }
-    .cta-area001 .cta-area001__contena001 a.btn001 {
-        width: 80%;
-        padding: 1% 10px 5px 0;
-    }
-    .page {
-        width: 320px;
-    }
-    #home-news {
-        font-size: 20px;
-    }
-    .pagetop {
-        bottom: -10px;
-        right: -10px;
-    }
-    .pagetop img {
-        width: 30%;
-    }
-    .pagetop a {
-        padding: 31px 0;
-        transform: scale(0.45);
-    }
-    #popmsg .message {
-        position: fixed;
-        transition: all 1s ease 0s;
-        bottom: 50px;
-        right: 70px;
-        opacity: 0;
-        background: #ea3c3c;
-        letter-spacing: -1px;
-        color: white;
-        font-size: 16px;
-        padding: 1.5%;
-        border-radius: 10px;
-    }
-    @keyframes fade1 {
-        0% {
-            display: block;
-            right: 100%;
-        }
-        100% {
-            bottom: 20px;
-            right: 70px;
-        }
-    }
-    @keyframes fade2 {
-        0% {
-            display: block;
-            bottom: 100%;
-        }
-        100% {
-            bottom: 20px;
-        }
-    }
-    @keyframes fade3 {
-        0% {
-            display: block;
-            right: 100%;
-            bottom: 100%;
-        }
-        100% {
-            bottom: 20px;
-            right: 70px;
-        }
-    }
+  }
 }
-
 
 /* Iphone 6/7/8 Plus (414×##)*/
 
-@media screen and (min-width:414px) and (max-width:479px) {}
-
+@media screen and (min-width: 414px) and (max-width: 479px) {
+}
 
 /* Iphone 6/7/8 X (375×##)*/
 
-@media screen and (min-width:375px) and (max-width:413px) {}
-
+@media screen and (min-width: 375px) and (max-width: 413px) {
+}
 
 /* Galaxy S5 (360×##) */
 
-@media screen and (min-width:321px) and (max-width:374px) {}
-
+@media screen and (min-width: 321px) and (max-width: 374px) {
+}
 
 /* Iphone 5/SE (320×##)*/
 
-@media screen and (max-width:320px) {}
+@media screen and (max-width: 320px) {
+}
