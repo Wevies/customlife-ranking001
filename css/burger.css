@@ -362,6 +362,7 @@
   width: 0;
 }
 .burg label.hamburger text open {
+  text-shadow: 0 0 2px #0006;
   color: #fefefe;
   width: 100%;
 }
