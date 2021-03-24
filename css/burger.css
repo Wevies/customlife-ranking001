@@ -317,7 +317,7 @@
 }
 .burg input.hamburger:checked ~ label > i {
   background-color: transparent;
-  transform: rotate(90deg);
+  transform: translateX(50%) rotate(90deg);
 }
 .burg input.hamburger:checked ~ label > i:before {
   transform: translate(50%, 50%) rotate(315deg);
