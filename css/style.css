@@ -1492,7 +1492,8 @@ Responsive.ver2021
   }
   /* Hero-------------area */
   .hero-area > .bg480 {
-    height: 280px;
+    height: 365px;
+    background: url(../assets/image/bg/main-image_sp.svg) no-repeat center center/cover;
   }
   .hero-area {
     max-width: 320px;

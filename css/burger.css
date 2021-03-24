@@ -53,7 +53,7 @@
   position: fixed;
   left: 0;
   top: 0;
-  height: 100px;
+  height: 20px;
   width: 100px;
   z-index: 10000;
   /* ie workaround */
@@ -366,10 +366,12 @@
 }
 .burg label.hamburger > i {
   position: absolute;
-  width: 100%;
+  width: 75%;
   height: 2px;
   top: 50%;
-  background-color: #03a9f4;
+  right: 50%;
+  transform: translateX(50%);
+  background-color: #69ccf9;
   pointer-events: auto;
   transition-duration: 0.35s;
   transition-delay: 0.35s;
@@ -395,8 +397,10 @@
 
 .burg label.hamburger {
   position: fixed;
-  top: 15px;
-  left: 15px;
+  top: 4px;
+  left: 10px;
+  background: aliceblue;
+  border-radius: 10px;
 }
 
 /**
