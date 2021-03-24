@@ -53,20 +53,19 @@
   position: fixed;
   left: 0;
   top: 0;
-  height: 100vh;
-  width: 100vw;
+  height: 100px;
+  width: 100px;
   z-index: 10000;
-  transform: translate(-100vw, 0);
   /* ie workaround */
   -ms-transform: translatex(100vw);
   box-sizing: border-box;
   pointer-events: none;
   padding-top: 125px;
   transition: width 475ms ease-out, transform 450ms ease, border-radius 0.8s 0.1s ease;
-  border-bottom-right-radius: 100vw;
-  border-top-right-radius: 50px;
+  border-bottom-right-radius: 50px;
+  border-top-right-radius: 10px;
   background-color: #3d88ce;
-  background-color: rgba(12, 106, 194, 0.4);
+  background-color: rgba(230, 230, 230, 0.8);
 }
 .burg .drawer-list3 {
   position: fixed;
@@ -91,10 +90,10 @@
   .burg .drawer-list {
     width: 40vw;
   }
-  .burg .drawer-list2 {
+  .burg .drawer-list3 {
     width: 40vw;
   }
-  .burg .drawer-list3 {
+  .burg input.hamburger:checked ~ .drawer-list2 {
     width: 40vw;
   }
 }
@@ -150,8 +149,10 @@
 }
 .burg input.hamburger:checked ~ .drawer-list2 {
   transform: translatex(0);
+  background-color: rgba(230, 230, 230, 0.4);
   border-bottom-right-radius: 0;
   border-top-right-radius: 0;
+  height: 100vh;
 }
 .burg input.hamburger:checked ~ .drawer-list3 {
   transform: translatex(-50%);
@@ -346,7 +347,7 @@
 .burg label.hamburger text close,
 .burg label.hamburger text open {
   text-transform: uppercase;
-  font-size: 0.8em;
+  font-size: 16px;
   align-text: center;
   position: absolute;
   transform: translateY(50px);
@@ -368,7 +369,7 @@
   width: 100%;
   height: 2px;
   top: 50%;
-  background-color: #fefefe;
+  background-color: #03a9f4;
   pointer-events: auto;
   transition-duration: 0.35s;
   transition-delay: 0.35s;
@@ -380,7 +381,7 @@
   width: 100%;
   height: 2px;
   right: 50%;
-  background-color: #fefefe;
+  background-color: #03a9f4;
   content: "";
   transition: transform 0.35s;
   transform-origin: 50% 50%;

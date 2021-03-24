@@ -95,7 +95,7 @@ video,
 ---------------------------------- */
 
 html {
-  font-size: 1.05vw;
+  font-size: 18px;
   /* 可変対応14px */
   font-family: source-han-sans-japanese, sans-serif;
   font-weight: 400;
