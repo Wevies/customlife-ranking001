@@ -31,7 +31,7 @@ $(function () {
             let imgPos = $(this).offset().top;
             let scroll = $(window).scrollTop();
             let windowHeight = $(window).height();
-            if (scroll > imgPos - windowHeight + window.outerHeight / 4) {
+            if (scroll > imgPos - windowHeight - window.outerHeight / 8) {
                 $(this).addClass("js-scroll-in");
                 $(this).removeClass("js-scroll");
             }

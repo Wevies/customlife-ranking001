@@ -126,7 +126,7 @@
   text-align: center;
   display: block;
   padding: 5rem 1rem;
-  font-size: calc(24px - 0.5vw);
+  font-size: calc(19px + 0.25vw);
 }
 @media (min-width: 768px) {
   .burg .drawer-list li a {
@@ -403,6 +403,7 @@
   left: 10px;
   background: aliceblue;
   border-radius: 10px;
+  box-shadow: 0 0 5px #0003;
 }
 
 /**

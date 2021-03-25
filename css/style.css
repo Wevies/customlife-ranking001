@@ -322,20 +322,20 @@ ranking area
   letter-spacing: 1px;
   right: 50px;
 }
-.ranking001-area--in > table tr:nth-child(2) td:nth-child(2)::after {
-  content: "(5.0)";
+.rank_001 tr:nth-child(2) td::after {
+  content: "(5.8)";
 }
 
-.ranking001-area--in > table tr:nth-child(3) td:nth-child(2)::after {
-  content: "(5.2)";
+.rank_001 tr:nth-child(3) td::after {
+  content: "(5.1)";
 }
 
-.ranking001-area--in > table tr:nth-child(4) td:nth-child(2)::after {
-  content: "(4.2)";
-}
-
-.ranking001-area--in > table tr:nth-child(5) td:nth-child(2)::after {
+.rank_001 tr:nth-child(4) td::after {
   content: "(5.6)";
+}
+
+.rank_001 tr:nth-child(5) td::after {
+  content: "(5.4)";
 }
 
 .ranking001-area--in > table td > small {
@@ -364,7 +364,7 @@ ranking area
   line-height: 1.7;
 }
 
-.ranking001-area--in .sub-contena span {
+.ranking001-area--in .sub-contena span.yr {
   background-image: -webkit-linear-gradient(left, #fff037a8 -17%, rgb(255 227 27) 80%);
   background-image: -moz-linear-gradient(left, #fff037a8 -17%, rgb(255 227 27) 80%);
   background-image: -ms-linear-gradient(left, #fff037a8 -17%, rgb(255 227 27) 80%);
@@ -373,6 +373,9 @@ ranking area
   background-repeat: repeat-x;
   background-size: 200% 0.4em;
   background-position: 0 0.9em;
+}
+span.br {
+  display: inline-block;
 }
 
 /* --------------Title */
@@ -720,7 +723,7 @@ ranking area
   line-height: 1.7;
 }
 
-.ranking002-area--in .sub-contena span {
+.ranking002-area--in .sub-contena span.yr {
   background-image: -webkit-linear-gradient(left, #fff037a8 -17%, rgb(255 227 27) 80%);
   background-image: -moz-linear-gradient(left, #fff037a8 -17%, rgb(255 227 27) 80%);
   background-image: -ms-linear-gradient(left, #fff037a8 -17%, rgb(255 227 27) 80%);
@@ -1076,7 +1079,7 @@ ranking area
   line-height: 1.7;
 }
 
-.ranking003-area--in .sub-contena span {
+.ranking003-area--in .sub-contena span.yr {
   background-image: -webkit-linear-gradient(left, #fff037a8 -17%, rgb(255 227 27) 80%);
   background-image: -moz-linear-gradient(left, #fff037a8 -17%, rgb(255 227 27) 80%);
   background-image: -ms-linear-gradient(left, #fff037a8 -17%, rgb(255 227 27) 80%);
@@ -1486,17 +1489,18 @@ Responsive.ver2021
 
 /* スマホ */
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 1020px) {
   .sp_only {
     display: block;
   }
   /* Hero-------------area */
   .hero-area > .bg480 {
+    max-width: 320px;
     height: 365px;
+    margin: auto;
     background: url(../assets/image/bg/main-image_sp.svg) no-repeat center center/cover;
   }
   .hero-area {
-    max-width: 320px;
     padding-top: 20px;
   }
   .hero-title001 > h1 {
@@ -1619,7 +1623,7 @@ Responsive.ver2021
     color: #222222;
     line-height: 2.3;
     font-size: 12px;
-    right: 20px;
+    right: calc(4.1vw - 1px);
   }
   .ranking001-area--in .sub-contena {
     font-size: 13px;
@@ -2035,21 +2039,6 @@ Responsive.ver2021
   }
 }
 
-/* Iphone 6/7/8 Plus (414×##)*/
-
-@media screen and (min-width: 414px) and (max-width: 479px) {
-}
-
-/* Iphone 6/7/8 X (375×##)*/
-
-@media screen and (min-width: 375px) and (max-width: 413px) {
-}
-
-/* Galaxy S5 (360×##) */
-
-@media screen and (min-width: 321px) and (max-width: 374px) {
-}
-
 /* Iphone 5/SE (320×##)*/
 
 @media screen and (max-width: 320px) {
@@ -2075,7 +2064,7 @@ Responsive.ver2021
   .ranking001-area--in > table tr:nth-child(3) td:nth-child(2)::after,
   .ranking001-area--in > table tr:nth-child(4) td:nth-child(2)::after,
   .ranking001-area--in > table tr:nth-child(5) td:nth-child(2)::after {
-    right: 27px;
+    right: 5px;
   }
   .ranking001-area--in > .word {
     font-size: 12px;
