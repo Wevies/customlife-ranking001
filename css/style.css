@@ -1120,6 +1120,21 @@ ranking area
   background-position: center;
   background: url("../assets/icons/no1.svg") no-repeat center center/contain;
 }
+#no1 > div > a::after {
+  background: url("../assets/icons/no1.svg") no-repeat center center/contain;
+}
+#no2 > div > a::after {
+  background: url("../assets/icons/no2.svg") no-repeat center center/contain;
+}
+#no3 > div > a::after {
+  background: url("../assets/icons/no3.svg") no-repeat center center/contain;
+}
+#no4 > div > a::after {
+  background: url("../assets/icons/no4.svg") no-repeat center center/contain;
+}
+#no5 > div > a::after {
+  background: url("../assets/icons/no5.svg") no-repeat center center/contain;
+}
 
 .ranking-title__001 > a::after {
   left: 15px;
