@@ -293,13 +293,13 @@ ul:not(.flow) li::before {
   .ranking002-area--in > table tr:nth-child(3) td:nth-child(2)::after,
   .ranking002-area--in > table tr:nth-child(4) td:nth-child(2)::after,
   .ranking002-area--in > table tr:nth-child(5) td:nth-child(2)::after {
-    right: 20px;
+    right: 5px;
   }
   .ranking003-area--in > table tr:nth-child(2) td:nth-child(2)::after,
   .ranking003-area--in > table tr:nth-child(3) td:nth-child(2)::after,
   .ranking003-area--in > table tr:nth-child(4) td:nth-child(2)::after,
   .ranking003-area--in > table tr:nth-child(5) td:nth-child(2)::after {
-    right: 20px;
+    right: 5px;
   }
   .word::before {
     height: 135px;

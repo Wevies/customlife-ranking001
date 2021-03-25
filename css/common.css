@@ -437,6 +437,7 @@ HIKARI
   height: 70px;
   position: absolute;
   float: left;
+  top: 10px;
   margin-top: -30px;
   transform: skewX(-45deg);
   animation-duration: 1.5s;

@@ -10,7 +10,7 @@ hero area
 
 .hero-area > .bg480 {
   content: "";
-  background: url("../assets/image/bg/main-image.svg") no-repeat center center/cover;
+  background: url("../assets/image/bg/main-image.svg") no-repeat center center/contain;
   height: 480px;
 }
 
@@ -134,7 +134,7 @@ How area
   font-style: normal;
 }
 
-.how-area__contena001--in > p > span {
+.how-area__contena001--in > p > span.yr {
   background-image: -webkit-linear-gradient(left, #fff037a8 -17%, rgb(255 227 27) 80%);
   background-image: -moz-linear-gradient(left, #fff037a8 -17%, rgb(255 227 27) 80%);
   background-image: -ms-linear-gradient(left, #fff037a8 -17%, rgb(255 227 27) 80%);
@@ -291,7 +291,7 @@ ranking area
   color: white;
   text-align: center;
   line-height: 2;
-  padding: 10px 0 0px;
+  padding: 10px;
 }
 
 .ranking001-area--in > table.data th:after {
@@ -302,11 +302,10 @@ ranking area
   width: 50%;
   text-align: left;
   background-color: #f7f7f7;
-  padding: 10px 0 25px 50px;
+  padding: 10px;
   color: #070707;
   font-weight: bold;
   letter-spacing: 5px;
-  line-height: 2;
   font-size: 20px;
   text-shadow: none;
 }
@@ -1205,10 +1204,10 @@ about area
 
 .about-area__contena001--in > p {
   font-size: 18px;
-  padding: 2% 10%;
+  padding: 2% 5%;
 }
 
-.about-area__contena001--in > p > span {
+.about-area__contena001--in > p > span.yr {
   background-image: -webkit-linear-gradient(left, transparent -17%, rgb(255, 255, 102) 50%);
   background-image: -moz-linear-gradient(left, transparent -17%, rgb(255, 255, 102) 50%);
   background-image: -ms-linear-gradient(left, transparent -17%, rgb(255, 255, 102) 50%);
@@ -1441,7 +1440,7 @@ Responsive.ver2021
     padding-left: 30px;
   }
   .hero-title001 small {
-    font-size: 15px;
+    font-size: 20px;
     line-height: 5;
     margin: 0;
   }
@@ -1619,13 +1618,14 @@ Responsive.ver2021
     color: white;
     text-align: center;
     line-height: 2;
-    padding: 15px 0 0px;
+    padding: 10px 0;
+    vertical-align: middle;
   }
   .ranking001-area--in > table.data td {
     width: 60%;
     text-align: left;
     background-color: #f7f7f7;
-    padding: 5px 0 15px 10px;
+    padding: 10px 10px;
     color: #070707;
     font-weight: bold;
     letter-spacing: 0px;
@@ -1771,13 +1771,14 @@ Responsive.ver2021
     color: white;
     text-align: center;
     line-height: 2;
-    padding: 15px 0 0px;
+    padding: 10px 0;
+    vertical-align: middle;
   }
   .ranking002-area--in > table.data td {
     width: 60%;
     text-align: left;
     background-color: #f7f7f7;
-    padding: 5px 0 15px 10px;
+    padding: 10px 10px;
     color: #070707;
     font-weight: bold;
     letter-spacing: 0px;
@@ -1923,13 +1924,14 @@ Responsive.ver2021
     color: white;
     text-align: center;
     line-height: 2;
-    padding: 15px 0 0px;
+    padding: 10px 0;
+    vertical-align: middle;
   }
   .ranking003-area--in > table.data td {
     width: 60%;
     text-align: left;
     background-color: #f7f7f7;
-    padding: 5px 0 15px 10px;
+    padding: 10px 10px;
     color: #070707;
     font-weight: bold;
     letter-spacing: 0px;
@@ -1973,15 +1975,18 @@ Responsive.ver2021
 
 /* Iphone 5/SE (320×##)*/
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 480px) {
   .how-title__001 {
     font-size: 23px;
     transform: translateY(17px);
   }
   .hero-title001 > h1 {
-    font-size: 26px;
+    font-size: 20px;
     line-height: 4;
     padding-left: 30px;
+  }
+  .hero-title001 small {
+    font-size: 15px;
   }
   .hero-title002 > h1 {
     font-size: 20px;
