@@ -322,21 +322,6 @@ ranking area
   letter-spacing: 1px;
   right: 50px;
 }
-.rank_001 tr:nth-child(2) td::after {
-  content: "(5.8)";
-}
-
-.rank_001 tr:nth-child(3) td::after {
-  content: "(5.1)";
-}
-
-.rank_001 tr:nth-child(4) td::after {
-  content: "(5.6)";
-}
-
-.rank_001 tr:nth-child(5) td::after {
-  content: "(5.4)";
-}
 
 .ranking001-area--in > table td > small {
   width: 10%;
@@ -653,48 +638,14 @@ ranking area
 
 /* ----------------RANK */
 
-.ranking002-area--in > table tr:nth-child(2) td:nth-child(2)::after {
+.ranking002-area--in > table tr td::after {
   position: absolute;
   text-shadow: none;
   color: #222222;
   line-height: 2.5;
   font-size: 20px;
   letter-spacing: 1px;
-  content: "(5.0)";
-  right: 200px;
-}
-
-.ranking002-area--in > table tr:nth-child(3) td:nth-child(2)::after {
-  position: absolute;
-  text-shadow: none;
-  color: #222222;
-  line-height: 2.5;
-  font-size: 20px;
-  letter-spacing: 1px;
-  content: "(5.2)";
-  right: 200px;
-}
-
-.ranking002-area--in > table tr:nth-child(4) td:nth-child(2)::after {
-  position: absolute;
-  text-shadow: none;
-  color: #222222;
-  line-height: 2.5;
-  font-size: 20px;
-  letter-spacing: 1px;
-  content: "(4.2)";
-  right: 200px;
-}
-
-.ranking002-area--in > table tr:nth-child(5) td:nth-child(2)::after {
-  position: absolute;
-  text-shadow: none;
-  color: #222222;
-  line-height: 2.5;
-  font-size: 20px;
-  letter-spacing: 1px;
-  content: "(5.6)";
-  right: 200px;
+  right: 50px;
 }
 
 .ranking002-area--in > table td > small {
@@ -1009,48 +960,14 @@ ranking area
 
 /* ----------------RANK */
 
-.ranking003-area--in > table tr:nth-child(2) td:nth-child(2)::after {
+.ranking003-area--in > table tr td::after {
   position: absolute;
   text-shadow: none;
   color: #222222;
   line-height: 2.5;
   font-size: 20px;
   letter-spacing: 1px;
-  content: "(5.0)";
-  right: 200px;
-}
-
-.ranking003-area--in > table tr:nth-child(3) td:nth-child(2)::after {
-  position: absolute;
-  text-shadow: none;
-  color: #222222;
-  line-height: 2.5;
-  font-size: 20px;
-  letter-spacing: 1px;
-  content: "(5.2)";
-  right: 200px;
-}
-
-.ranking003-area--in > table tr:nth-child(4) td:nth-child(2)::after {
-  position: absolute;
-  text-shadow: none;
-  color: #222222;
-  line-height: 2.5;
-  font-size: 20px;
-  letter-spacing: 1px;
-  content: "(4.2)";
-  right: 200px;
-}
-
-.ranking003-area--in > table tr:nth-child(5) td:nth-child(2)::after {
-  position: absolute;
-  text-shadow: none;
-  color: #222222;
-  line-height: 2.5;
-  font-size: 20px;
-  letter-spacing: 1px;
-  content: "(5.6)";
-  right: 200px;
+  right: 50px;
 }
 
 .ranking003-area--in > table td > small {
@@ -2090,4 +2007,84 @@ Responsive.ver2021
   .ranking001-area--in > .word::before {
     top: -480px;
   }
+}
+
+.rank_001 tr:nth-child(2) td::after {
+  content: "(5.8)";
+}
+
+.rank_001 tr:nth-child(3) td::after {
+  content: "(5.1)";
+}
+
+.rank_001 tr:nth-child(4) td::after {
+  content: "(5.6)";
+}
+
+.rank_001 tr:nth-child(5) td::after {
+  content: "(5.4)";
+}
+
+.rank_002 tr:nth-child(2) td::after {
+  content: "(5.2)";
+}
+
+.rank_002 tr:nth-child(3) td::after {
+  content: "(5.0)";
+}
+
+.rank_002 tr:nth-child(4) td::after {
+  content: "(4.8)";
+}
+
+.rank_002 tr:nth-child(5) td::after {
+  content: "(5.2)";
+}
+
+.rank_003 tr:nth-child(2) td::after {
+  content: "(5.0)";
+}
+
+.rank_003 tr:nth-child(3) td::after {
+  content: "(4.8)";
+}
+
+.rank_003 tr:nth-child(4) td::after {
+  content: "(4.9)";
+}
+
+.rank_003 tr:nth-child(5) td::after {
+  content: "(5.4)";
+}
+
+.rank_004 tr:nth-child(2) td::after {
+  content: "(4.8)";
+}
+
+.rank_004 tr:nth-child(3) td::after {
+  content: "(4.8)";
+}
+
+.rank_004 tr:nth-child(4) td::after {
+  content: "(5.0)";
+}
+
+.rank_004 tr:nth-child(5) td::after {
+  content: "(5.0)";
+}
+
+.rank_005 tr:nth-child(2) td::after {
+  content: "(4.5)";
+}
+
+.rank_005 tr:nth-child(3) td::after {
+  content: "(4.5)";
+}
+
+.rank_005 tr:nth-child(4) td::after {
+  content: "(4.2)";
+}
+
+.rank_005 tr:nth-child(5) td::after {
+  content: "(5.5)";
 }
