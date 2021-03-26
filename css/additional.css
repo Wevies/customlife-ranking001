@@ -1,0 +1,45 @@
+.featherlight-sample {
+  display: none;
+  max-width: 1024px;
+}
+#law h3 {
+  padding: 5px 0;
+  text-align: center;
+  font-size: 1.5rem;
+}
+#law table,
+#law th,
+#law td {
+  border: 1px solid #333;
+}
+#law th,
+#law td {
+  padding: 2px;
+}
+#law th {
+  background: #31326f;
+  color: #fff;
+  font-weight: normal;
+}
+#privacy > div > div,
+#privacy > div > div > div > div {
+  padding: 5px;
+}
+#privacy > div > div > div {
+  padding: 5px 0;
+}
+#privacy h3 {
+  padding: 5px 0;
+  text-align: center;
+  font-size: 1.5rem;
+}
+#privacy h4 {
+  font-size: 1rem;
+}
+#privacy ul {
+  padding: 5px;
+  padding-right: 0;
+}
+#privacy ul li {
+  list-style: decimal inside;
+}
