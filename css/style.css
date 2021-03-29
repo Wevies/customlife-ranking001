@@ -2093,3 +2093,19 @@ Responsive.ver2021
 .rank_005 tr:nth-child(5) td::after {
   content: "(5.5)";
 }
+
+#no1 > .pop::before {
+  background: url(../assets/icons/no.001.svg) no-repeat center center/contain;
+}
+#no2 > .pop::before {
+  background: url(../assets/icons/no.002.svg) no-repeat center center/contain;
+}
+#no3 > .pop::before {
+  background: url(../assets/icons/no.003.svg) no-repeat center center/contain;
+}
+#no4 > .pop::before {
+  background: url(../assets/icons/no.004.svg) no-repeat center center/contain;
+}
+#no5 > .pop::before {
+  background: url(../assets/icons/no.005.svg) no-repeat center center/contain;
+}
