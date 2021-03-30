@@ -422,6 +422,7 @@ HIKARI
   text-decoration: none;
   padding: 1%;
   width: 40%;
+  position: relative;
   min-width: 10em;
   line-height: 2;
   margin: 0 auto;
