@@ -2,20 +2,27 @@
   display: none;
   max-width: 1024px;
 }
+#ab h3,
 #law h3 {
   padding: 5px 0;
   text-align: center;
   font-size: 1.5rem;
 }
+#ab table,
+#ab th,
+#ab td,
 #law table,
 #law th,
 #law td {
   border: 1px solid #333;
 }
+#ab th,
+#ab td,
 #law th,
 #law td {
   padding: 2px;
 }
+#ab th,
 #law th {
   background: #31326f;
   color: #fff;
@@ -39,7 +46,8 @@
 #privacy ul {
   padding: 5px;
   padding-right: 0;
+  padding-left: 2em;
 }
 #privacy ul li {
-  list-style: decimal inside;
+  list-style: decimal outside;
 }
